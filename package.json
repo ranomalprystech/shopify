@@ -1,0 +1,16 @@
+{
+  "name": "shopify",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass assets/theme.scss assets/theme.css",
+    "sass:watch": "sass --watch assets/theme.scss:assets/theme.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.104.1"
+  }
+}
