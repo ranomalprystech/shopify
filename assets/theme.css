@@ -1,98 +1,17 @@
-* {
-  box-sizing: border-box;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @use "./styles/variable" as *;
+ *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   assets\theme.scss 1:1  root stylesheet */
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background: #f5e7ba;
-  color: #380c0d;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-img {
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
-  max-width: 100%;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use \"./styles/variable\" as *;\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   assets\\theme.scss 1:1  root stylesheet";
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-button,
-input,
-textarea,
-select {
-  font: inherit;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-.rachel-hero {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 80px 40px;
-}
-.rachel-hero .heading {
-  max-width: 800px;
-  margin: 0 auto 60px;
-  text-align: center;
-}
-.rachel-hero .heading h1 {
-  margin: 0;
-  color: #380c0d;
-  font-family: "FONTSPRING DEMO", serif;
-  font-size: 72px;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 0;
-}
-.rachel-hero__content {
-  display: grid;
-  grid-template-columns: 1fr 360px 1fr;
-  gap: 60px;
-  align-items: start;
-}
-.rachel-hero__left {
-  color: #380c0d;
-}
-.rachel-hero__left p {
-  font-size: 20px;
-  margin: 20px;
-}
-.rachel-hero__center {
-  width: 360px;
-}
-.rachel-hero__right {
-  color: #380c0d;
-}
-.rachel-hero__right p {
-  margin: 0;
-  font-size: 20px;
-  top: 256px;
-}
-
-@font-face {
-  font-family: "FONTSPRING DEMO" !important;
-  src: url("{{ 'fontspring-demo.woff2' | asset_url }}") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-/*# sourceMappingURL=theme.css.map */
