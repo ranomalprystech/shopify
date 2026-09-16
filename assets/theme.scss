@@ -1,591 +1,502 @@
-/* =========================================
-   HEALING JOURNEY SECTION
-   ========================================= */
+// @use "styling/variables" as *;
 
 .healing-journey {
-  background: #f4efdf;
-  color: #3d1013;
+  // background: $color-bg;
+  background-color: #f5e7ba;
+  color: #380c0d;
+  // color: $#380c0d;
   padding: 80px 30px 75px;
-}
 
-.healing-journey__container {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-/* ---------- Heading ---------- */
-
-.healing-journey__heading {
-  text-align: center;
-  margin-bottom: 55px;
-}
-
-.healing-journey__heading h1 {
-  margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(48px, 5vw, 72px);
-  // font-weight: 400;
-  line-height: 0.92;
-  letter-spacing: -2px;
-  text-transform: uppercase;
-}
-
-/* ---------- Main 3-column layout ---------- */
-
-.healing-journey__content {
-  display: grid;
-  grid-template-columns: 1fr 360px 1fr;
-  align-items: center;
-  column-gap: 45px;
-}
-
-/* ---------- Left text ---------- */
-
-.healing-journey__left {
-  max-width: 245px;
-  justify-self: end;
-  margin-top: 20px;
-}
-
-.healing-journey__left p {
-  margin: 0 0 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 1.18;
-  color: #48181a;
-}
-
-.healing-journey__left p:last-child {
-  margin-bottom: 0;
-}
-
-.healing-journey__highlight {
-  font-style: italic;
-  font-weight: 700;
-}
-
-/* ---------- Center ---------- */
-
-.healing-journey__center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* ---------- Image frame ---------- */
-
-.healing-journey__image-frame {
-  width: 100%;
-  border: 1px solid #8f856d;
-  padding: 8px;
-  background: transparent;
-}
-
-/* Image itself */
-
-.healing-journey__image {
-  width: 100%;
-  height: 310px;
-  overflow: hidden;
-  border-radius: 180px 180px 0 0;
-}
-
-.healing-journey__image img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* ---------- Caption ---------- */
-
-.healing-journey__caption {
-  padding: 14px 5px 8px;
-  text-align: center;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 22px;
-  line-height: 1.05;
-  color: #3d1013;
-  text-transform: uppercase;
-}
-
-/* ---------- Button ---------- */
-
-.healing-journey__button {
-  display: inline-block;
-  margin-top: 23px;
-  padding: 11px 25px;
-  border: 1px solid #6c2528;
-  border-radius: 30px;
-  color: #48181a;
-  background: transparent;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  text-decoration: none;
-  transition: all 0.25s ease;
-}
-
-.healing-journey__button:hover {
-  background: #48181a;
-  color: #f4efdf;
-}
-
-/* ---------- Right quote ---------- */
-
-.healing-journey__right {
-  position: relative;
-  max-width: 240px;
-  justify-self: start;
-  display: flex;
-  align-items: center;
-}
-
-.healing-journey__right p {
-  margin: 0 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 1.15;
-  color: #4b481f;
-}
-
-/* Quote marks */
-
-.healing-journey__quote-mark {
-  position: absolute;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 70px;
-  line-height: 0.5;
-  font-weight: 700;
-  color: #55532c;
-}
-
-.healing-journey__quote-mark--open {
-  top: -4px;
-  left: -10px;
-}
-
-.healing-journey__quote-mark--close {
-  right: -5px;
-  bottom: -15px;
-}
-
-/* =========================================
-   TABLET
-   ========================================= */
-
-@media (max-width: 900px) {
-  .healing-journey {
-    padding: 65px 25px;
+  &__container {
+    max-width: 1100px;
+    margin: 0 auto;
   }
 
-  .healing-journey__content {
-    grid-template-columns: 1fr 320px 1fr;
-    column-gap: 25px;
+  &__heading {
+    text-align: center;
+    margin-bottom: 55px;
+
+    h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(48px, 5vw, 72px);
+      line-height: 0.92;
+      letter-spacing: -2px;
+      text-align: center;
+      text-transform: uppercase;
+    }
   }
 
-  .healing-journey__left {
-    max-width: 210px;
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 360px 1fr;
+    align-items: center;
+    column-gap: 45px;
   }
 
-  .healing-journey__left p,
-  .healing-journey__right p {
-    font-size: 14px;
+  // ---------- Left text ----------
+
+  &__left {
+    max-width: 245px;
+    justify-self: end;
+    margin-top: 20px;
+
+    p {
+      margin: 0 0 25px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      line-height: 1.18;
+      color: #48181a;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
-  .healing-journey__image {
-    height: 280px;
+  &__highlight {
+    font-style: italic;
+    font-weight: 700;
   }
 
-  .healing-journey__caption {
-    font-size: 19px;
-  }
-}
+  // ---------- Center ----------
 
-/* =========================================
-   MOBILE
-   ========================================= */
-
-@media (max-width: 749px) {
-  .healing-journey {
-    padding: 55px 20px 60px;
-  }
-
-  .healing-journey__heading {
-    margin-bottom: 35px;
-  }
-
-  .healing-journey__heading h1 {
-    font-size: clamp(40px, 11vw, 55px);
-    letter-spacing: -1px;
-    line-height: 0.95;
-  }
-
-  .healing-journey__content {
+  &__center {
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    align-items: center;
   }
 
-  /* Image first */
+  // ---------- Image frame ----------
 
-  .healing-journey__center {
-    order: 1;
-    width: min(100%, 360px);
-  }
-
-  /* Left text */
-
-  .healing-journey__left {
-    order: 2;
-    max-width: 360px;
+  &__image-frame {
     width: 100%;
-    margin-top: 0;
-    justify-self: auto;
+    border: 1px solid #8f856d;
+    padding: 8px;
+    background: transparent;
   }
 
-  /* Quote */
+  // Image itself
 
-  .healing-journey__right {
-    order: 3;
-    max-width: 320px;
+  &__image {
     width: 100%;
-    align-self: center;
+    height: 310px;
+    overflow: hidden;
+    border-radius: 180px 180px 0 0;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
-  .healing-journey__image {
-    height: 330px;
+  // ---------- Caption ----------
+
+  &__caption {
+    padding: 14px 5px 8px;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    line-height: 1.05;
+    color: #3d1013;
+    text-transform: uppercase;
   }
 
-  .healing-journey__caption {
-    font-size: 21px;
+  // ---------- Button ----------
+
+  &__button {
+    display: inline-block;
+    margin-top: 23px;
+    padding: 11px 25px;
+    border: 1px solid #6c2528;
+    border-radius: 30px;
+    color: #48181a;
+    background: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+
+    &:hover {
+      background: #48181a;
+      color: #f4efdf;
+    }
   }
 
-  .healing-journey__left p {
-    font-size: 15px;
-    line-height: 1.25;
+  // ---------- Right quote ----------
+
+  &__right {
+    position: relative;
+    font-family: Handlee;
+    max-width: 240px;
+    justify-self: start;
+    display: flex;
+    align-items: center;
+
+    p {
+      margin: 0 25px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.15;
+      color: #4b481f;
+    }
   }
 
-  .healing-journey__right p {
-    font-size: 15px;
+  // Quote marks
+
+  &__quote-mark {
+    position: absolute;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 70px;
+    line-height: 0.5;
+    font-weight: 700;
+    color: #55532c;
+
+    &--open {
+      top: -4px;
+      left: -10px;
+    }
+
+    &--close {
+      right: -5px;
+      bottom: -15px;
+    }
   }
 }
 
-/* =========================================
-   RACHEL LANDING
-   ========================================= */
-
 .rachel-landing {
-  background: #f5efdf;
+  // background: $color-bg;
+  background: #f5e7ba;
   color: #401316;
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
+
+  .rachel-announcement {
+    a {
+      color: #f5e7ba;
+      text-decoration: none;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+
+  .rachel-brand {
+    text-align: center;
+    padding-top: 18px;
+
+    a {
+      color: #050505;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 31px;
+      font-weight: 700;
+      line-height: 0.88;
+      letter-spacing: 1px;
+    }
+  }
+
+  // =========================
+  // NAVIGATION
+  // =========================
+
+  .rachel-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 31px;
+    font-weight: bold;
+    padding: 35px 20px 0;
+    flex-wrap: wrap;
+
+    &__item {
+      color: #401316;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 14px;
+      white-space: nowrap;
+      transition: opacity 0.2s ease;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
+    &__arrow {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      font-weight: bold;
+      margin-left: 7px;
+      margin-bottom: 3px;
+      border-right: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      transform: rotate(45deg);
+    }
+  }
+
+  .rachel-hero {
+    max-width: 1240px;
+    height: 767px;
+    margin: 0 auto;
+    padding: 85px 30px 75px;
+    position: relative;
+
+    &__heading {
+      text-align: center;
+      h1 {
+        margin: 0 auto;
+        width: 672px;
+        height: 170px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(50px, 5.2vw, 70px);
+        font-weight: 400;
+        line-height: 0.85;
+        letter-spacing: -2px;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 2;
+      }
+    }
+
+    // =========================
+    // HERO CONTENT
+    // =========================
+
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr 300px 1fr;
+      align-items: center;
+      column-gap: 76px;
+      position: relative;
+      z-index: 1;
+    }
+
+    // =========================
+    // LEFT TEXT
+    // =========================
+
+    &__left {
+      max-width: 300px;
+      width: 100%;
+      justify-self: end;
+
+      p {
+        margin: 0 0 26px;
+        color: #48191b;
+        font-size: 18px;
+        width: 346px;
+        line-height: 1.15;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__highlight {
+      font-style: italic;
+      font-weight: 700;
+    }
+
+    // =========================
+    // CENTER IMAGE
+    // =========================
+
+    &__center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+       margin-top: -92px;
+    }
+
+    // =========================
+    // IMAGE FRAME
+    // =========================
+
+    .rachel-image-frame {
+      max-width: 420px;
+      border: 1px solid #4e4d2e;
+      padding: 7px;
+      border-radius: 150px 150px 0 0;
+      overflow: hidden;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 150px 150px 0 0;
+      }
+    }
+
+    // =========================
+    // IMAGE CAPTION
+    // =========================
+
+    .rachel-image-caption {
+      padding: 14px 8px 18px;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    // =========================
+    // BUTTON
+    // =========================
+
+    .rachel-button {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 11px 22px;
+      border: 1px solid #5c292b;
+      border-radius: 30px;
+      color: #48191b;
+      text-decoration: none;
+      font-size: 14px;
+      transition: all 0.25s ease;
+
+      &:hover {
+        background: #48191b;
+        color: #f5efdf;
+      }
+    }
+
+    // =========================
+    // RIGHT QUOTE
+    // =========================
+
+    &__right {
+      position: relative;
+      width: 260px;
+      min-height: 100px;
+      line-height: 100%;
+      justify-self: start;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+
+      .rachel-hero__quote {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        margin: 0;
+        padding: 0 45px;
+        box-sizing: border-box;
+        color: #4e4c27;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        line-height: 1.15;
+        text-align: left;
+      }
+
+      .rachel-quote-mark {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        width: 40px;
+        height: 50px;
+        object-fit: contain;
+
+        &--open {
+          top: -16px;
+          left: -6px;
+        }
+
+        &--close {
+          right: 0;
+          bottom: 0;
+        }
+      }
+    }
+  }
 }
 
-/* =========================================
-   ANNOUNCEMENT BAR
-   ========================================= */
-
-// .rachel-announcement {
-//   background: #380C0D;
-//   text-align: center;
-//   padding: 13px 20px;
-// }
-
-.rachel-announcement a {
-  color: #f5e7ba;
-  text-decoration: none;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-/* ========================= BRAND ========================================= */
-
-.rachel-brand {
-  text-align: center;
-  padding-top: 18px;
-}
-
-.rachel-brand a {
-  color: #050505;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 31px;
-  font-weight: 700;
-  line-height: 0.88;
-  letter-spacing: 1px;
-}
-
-/* =========================================
-   NAVIGATION
-   ========================================= */
-
-.rachel-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 31px;
-  font-weight: bold;
-  padding: 35px 20px 0;
-  flex-wrap: wrap;
-}
-
-.rachel-nav__item {
-  color: #401316;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 14px;
-  white-space: nowrap;
-  transition: opacity 0.2s ease;
-}
-
-.rachel-nav__item:hover {
-  opacity: 0.6;
-}
-
-.rachel-nav__arrow {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  font-weight: bold;
-  margin-left: 7px;
-  margin-bottom: 3px;
-  border-right: 2px solid currentColor;
-  border-bottom: 2px solid currentColor;
-  transform: rotate(45deg);
-}
-
-/* =========================================
-   HERO
-   ========================================= */
-
-.rachel-hero {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 85px 30px 75px;
-}
-
-.rachel-hero__heading {
-  text-align: center;
-  margin-bottom: 55px;
-}
-
-.rachel-hero__heading h1 {
-  margin: 0 auto;
-  max-width: 650px;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(50px, 5.2vw, 70px);
-  font-weight: 400;
-  line-height: 0.85;
-  letter-spacing: -2px;
-  text-transform: uppercase;
-}
-
-/* =========================================
-   HERO CONTENT
-   ========================================= */
-
-.rachel-hero__content {
-  display: grid;
-  grid-template-columns: 1fr 300px 1fr;
-  align-items: center;
-  column-gap: 55px;
-}
-
-/* =========================================
-   LEFT TEXT
-   ========================================= */
-
-.rachel-hero__left {
-  max-width: 245px;
-  justify-self: end;
-}
-
-.rachel-hero__left p {
-  margin: 0 0 26px;
-  color: #48191b;
-  font-size: 14px;
-  line-height: 1.15;
-}
-
-.rachel-hero__left p:last-child {
-  margin-bottom: 0;
-}
-
-.rachel-hero__highlight {
-  font-style: italic;
-  font-weight: 700;
-}
-
-/* =========================================
-   CENTER IMAGE
-   ========================================= */
-
-.rachel-hero__center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.rachel-image-frame {
-  width: 100%;
-  border: 1px solid #8b816a;
-  padding: 7px;
-}
-
-.rachel-image-frame img {
-  display: block;
-  width: 100%;
-  height: 295px;
-  object-fit: cover;
-  border-radius: 150px 150px 0 0;
-}
-
-.rachel-image-caption {
-  padding: 13px 4px 7px;
-  text-align: center;
-  color: #401316;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 20px;
-  line-height: 1.05;
-  text-transform: uppercase;
-}
-
-/* =========================================
-   BUTTON
-   ========================================= */
-
-.rachel-button {
-  display: inline-block;
-  margin-top: 22px;
-  padding: 11px 22px;
-  border: 1px solid #5c292b;
-  border-radius: 30px;
-  color: #48191b;
-  text-decoration: none;
-  font-size: 14px;
-  transition: all 0.25s ease;
-}
-
-.rachel-button:hover {
-  background: #48191b;
-  color: #f5efdf;
-}
-
-/* =========================================
-   RIGHT QUOTE
-   ========================================= */
-
-.rachel-hero__right {
-  position: relative;
-  max-width: 225px;
-  justify-self: start;
-  display: flex;
-  align-items: center;
-}
-
-.rachel-hero__right p {
-  margin: 0 25px;
-  color: #4e4c27;
-  font-size: 15px;
-  line-height: 1.15;
-}
-
-.rachel-quote-mark {
-  position: absolute;
-  color: #55532c;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 65px;
-  font-weight: 700;
-  line-height: 0.5;
-}
-
-.rachel-quote-mark--open {
-  top: -3px;
-  left: -8px;
-}
-
-.rachel-quote-mark--close {
-  right: -3px;
-  bottom: -15px;
-}
-
-/* =========================================
-   TABLET
-   ========================================= */
+// =========================================
+// TABLET
+// =========================================
 
 @media (max-width: 950px) {
-  .rachel-nav {
-    gap: 20px;
-  }
+  .rachel-landing {
+    .rachel-nav {
+      gap: 20px;
+    }
 
-  .rachel-hero {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+    .rachel-hero {
+      padding-left: 20px;
+      padding-right: 20px;
 
-  .rachel-hero__content {
-    grid-template-columns: 1fr 280px 1fr;
-    column-gap: 25px;
-  }
+      &__content {
+        grid-template-columns: 1fr 280px 1fr;
+        column-gap: 25px;
+      }
 
-  .rachel-hero__left p,
-  .rachel-hero__right p {
-    font-size: 13px;
+      &__left,
+      &__right {
+        p {
+          font-size: 13px;
+        }
+      }
+    }
   }
 }
 
-/* =========================================
-   MOBILE
-   ========================================= */
+// =========================================
+// MOBILE
+// =========================================
 
 @media (max-width: 749px) {
-  .rachel-nav {
-    gap: 14px 20px;
-    padding-top: 25px;
-  }
+  .rachel-landing {
+    .rachel-nav {
+      gap: 14px 20px;
+      padding-top: 25px;
 
-  .rachel-nav__item {
-    font-size: 13px;
-  }
+      &__item {
+        font-size: 13px;
+      }
+    }
 
-  .rachel-hero {
-    padding-top: 55px;
-  }
+    .rachel-hero {
+      padding-top: 55px;
 
-  .rachel-hero__heading {
-    margin-bottom: 35px;
-  }
+      &__heading {
+        margin-bottom: 35px;
 
-  .rachel-hero__heading h1 {
-    font-size: clamp(42px, 11vw, 58px);
-    line-height: 0.9;
-  }
+        h1 {
+          font-size: clamp(42px, 11vw, 58px);
+          line-height: 0.9;
+        }
+      }
 
-  .rachel-hero__content {
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-  }
+      &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+      }
 
-  .rachel-hero__center {
-    order: 1;
-    width: min(100%, 340px);
-  }
+      &__center {
+        order: 1;
+        width: min(100%, 340px);
+      }
 
-  .rachel-hero__left {
-    order: 2;
-    width: min(100%, 340px);
-    max-width: none;
-  }
+      &__left {
+        order: 2;
+        width: min(100%, 340px);
+        max-width: none;
+      }
 
-  .rachel-hero__right {
-    order: 3;
-    width: min(100%, 320px);
-    max-width: none;
-    align-self: center;
-  }
+      &__right {
+        order: 3;
+        width: min(100%, 320px);
+        max-width: none;
+        align-self: center;
+      }
+    }
 
-  .rachel-image-frame img {
-    height: 330px;
+    .rachel-image-frame {
+      img {
+        height: 330px;
+      }
+    }
   }
 }
