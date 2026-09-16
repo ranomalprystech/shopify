@@ -17,11 +17,14 @@
         "announcement_BxgCk9": {
           "type": "_announcement",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "Pre-Order “Look Up,” my new book!",
+            "link": "",
             "font": "var(--font-subheading--family)",
-            "font_size": "0.75rem",
+            "font_size": "1rem",
+            "weight": "",
             "letter_spacing": "normal",
-            "case": "none"
+            "case": "none",
+            "text_color": "#f5e7ba"
           },
           "blocks": {}
         }
@@ -33,7 +36,7 @@
       "settings": {
         "speed": 5,
         "section_width": "page-width",
-        "background_color": "{{ settings.color_palette.background }}",
+        "background_color": "#380c0d",
         "divider_width": 1,
         "divider_color": "{{ settings.color_palette.color2 }}",
         "padding-block-start": 15,
@@ -58,6 +61,8 @@
           "static": true,
           "settings": {
             "menu": "main-menu",
+            "background_color": "{{ settings.color_palette.background }}",
+            "text_color": "",
             "type_font_primary_size": "0.875rem",
             "menu_font_style": "inverse",
             "type_font_primary_link": "body",
@@ -67,6 +72,8 @@
             "featured_collections_aspect_ratio": "16 / 9",
             "image_border_radius": 0,
             "navigation_bar": false,
+            "background_color_navigation_bar": "{{ settings.color_palette.background }}",
+            "text_color_navigation_bar": "",
             "drawer_accordion": false,
             "drawer_accordion_expand_first": false,
             "drawer_dividers": false
@@ -78,6 +85,7 @@
         "logo_position": "left",
         "menu_position": "left",
         "menu_row": "top",
+        "customer_account_menu": "customer-account-main-menu",
         "show_search": true,
         "search_position": "right",
         "search_row": "top",
@@ -93,16 +101,148 @@
         "enable_sticky_header": "always",
         "divider_width": 0,
         "divider_size": "page-width",
+        "divider_color": "",
         "border_width": 0,
+        "bottom_border_color": "",
+        "actions_display_style": "icon",
+        "actions_font_size": "0.875rem",
+        "actions_font": "body",
+        "actions_text_case": "none",
         "background_color_top": "{{ settings.color_palette.background }}",
+        "text_color_top": "",
+        "background_color_bottom": "",
+        "text_color_bottom": "",
+        "bubble_style": "default",
+        "bubble_background_color": "",
+        "bubble_text_color": "",
         "enable_transparent_header_home": false,
+        "home_inverse_logo": false,
+        "text_color_transparent_home": "",
         "enable_transparent_header_product": false,
-        "enable_transparent_header_collection": false
+        "product_inverse_logo": false,
+        "text_color_transparent_product": "",
+        "enable_transparent_header_collection": false,
+        "collection_inverse_logo": false,
+        "text_color_transparent_collection": ""
+      }
+    },
+    "rachel_landing_7P7dVU": {
+      "type": "rachel-landing",
+      "blocks": {
+        "nav_item_FrAiFb": {
+          "type": "nav_item",
+          "settings": {
+            "label": "Home",
+            "link": "",
+            "has_dropdown": false
+          }
+        },
+        "nav_item_Ba3YEN": {
+          "type": "nav_item",
+          "settings": {
+            "label": "Books",
+            "link": "",
+            "has_dropdown": true
+          }
+        },
+        "nav_item_KMEqLM": {
+          "type": "nav_item",
+          "settings": {
+            "label": "Shop",
+            "link": "",
+            "has_dropdown": true
+          }
+        },
+        "nav_item_JJ4fwb": {
+          "type": "nav_item",
+          "settings": {
+            "label": "Guided Journals",
+            "link": "",
+            "has_dropdown": true
+          }
+        },
+        "nav_item_DmxEky": {
+          "type": "nav_item",
+          "settings": {
+            "label": "Workshops",
+            "link": "",
+            "has_dropdown": true
+          }
+        },
+        "nav_item_PfrbCw": {
+          "type": "nav_item",
+          "settings": {
+            "label": "1:1 Consultations",
+            "link": "",
+            "has_dropdown": true
+          }
+        },
+        "nav_item_fhybzp": {
+          "type": "nav_item",
+          "settings": {
+            "label": "Blog",
+            "link": "",
+            "has_dropdown": false
+          }
+        },
+        "nav_item_MbrjmV": {
+          "type": "nav_item",
+          "settings": {
+            "label": "Subscribe",
+            "link": "",
+            "has_dropdown": false
+          }
+        },
+        "nav_item_7TpRtj": {
+          "type": "nav_item",
+          "settings": {
+            "label": "Prints",
+            "link": "",
+            "has_dropdown": false
+          }
+        },
+        "nav_item_kq7dbh": {
+          "type": "nav_item",
+          "settings": {
+            "label": "FREE Journaling Templates",
+            "link": "",
+            "has_dropdown": false
+          }
+        }
+      },
+      "block_order": [
+        "nav_item_FrAiFb",
+        "nav_item_Ba3YEN",
+        "nav_item_KMEqLM",
+        "nav_item_JJ4fwb",
+        "nav_item_DmxEky",
+        "nav_item_PfrbCw",
+        "nav_item_fhybzp",
+        "nav_item_MbrjmV",
+        "nav_item_7TpRtj",
+        "nav_item_kq7dbh"
+      ],
+      "name": "Rachel Landing",
+      "settings": {
+        "announcement_text": "",
+        "announcement_link": "",
+        "brand_line_1": "RACHEL",
+        "brand_line_2": "HAVEKOST",
+        "heading": "WORDS FOR THE HEALING JOURNEY.",
+        "main_image": "shopify://shop_images/Rectangle_1.png",
+        "left_text_1": "Taking wisdom and lessons from 18 years of therapy and paying it forward with radical transparency, vulnerability, and education.",
+        "left_text_2": "It is my hope that you finally feel safe to show up as the fullest you, and that in doing so you learn to radically love and accept others in their full self-states, too.",
+        "highlight_text": "Whatever you do, I hope you live with purpose, lead with love, & connect with courage.",
+        "quote": "I’m not interested in befores and afters. Show me the messy middle.",
+        "image_caption": "AUTHOR. STORYTELLER. TEACHER.",
+        "button_text": "More About Rachel",
+        "button_link": ""
       }
     }
   },
   "order": [
     "header_announcements_9jGBFp",
-    "header_section"
+    "header_section",
+    "rachel_landing_7P7dVU"
   ]
 }
