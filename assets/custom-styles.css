@@ -1,0 +1,200 @@
+.rachel-landing {
+  min-height: 100vh;
+  background: #f5e7ba;
+  color: #380c0d;
+}
+
+.rachel-hero {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 80px 40px;
+}
+.rachel-hero .heading {
+  max-width: 800px;
+  text-align: center;
+}
+.rachel-hero .heading h1 {
+  color: #380c0d;
+  font-family: "Fontspring Demo", serif;
+  font-size: 72px;
+  letter-spacing: 8px;
+  position: relative;
+}
+.rachel-hero .content {
+  display: flex;
+}
+.rachel-hero .left {
+  max-width: 400px;
+  justify-self: end;
+  color: #48191b;
+}
+.rachel-hero .left p {
+  font-size: 20px;
+  line-height: 110%;
+  font-family: "Krub", sans-serif;
+}
+.rachel-hero .left p:last-child {
+  margin-bottom: 0;
+  font-weight: 700;
+  color: #4e4d2e;
+}
+.rachel-hero .highlight {
+  font-style: italic;
+  font-weight: 700;
+}
+.rachel-hero .center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+  margin-top: -120px;
+}
+.rachel-hero .rachel-image-frame {
+  width: 100%;
+  border: 1px solid #8f856d;
+  padding: 10px;
+  border-radius: 200px 200px 0 0;
+}
+.rachel-hero .rachel-image-frame img {
+  display: block;
+  max-width: 400px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 200px 200px 0 0;
+}
+.rachel-hero .rachel-image-caption {
+  padding: 13px 4px 7px;
+  color: #380c0d;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+.rachel-hero .rachel-button {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 11px 22px;
+  border: 1px solid #48191b;
+  border-radius: 30px;
+  color: #48191b;
+  background: transparent;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+.rachel-hero .rachel-button:hover {
+  color: #f5e7ba;
+  background: #48191b;
+}
+.rachel-hero .right {
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-self: center;
+}
+.rachel-hero .right p {
+  margin: 50px;
+  color: #4e4d2e;
+  font-size: 32px;
+  font-family: "Handlee", cursive;
+  line-height: 100%;
+  max-width: 312px;
+}
+.rachel-hero .rachel-quote-mark {
+  position: absolute;
+  color: #4e4d2e;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 0.5;
+}
+.rachel-hero .rachel-quote-mark--open {
+  top: 52px;
+  left: 10px;
+}
+.rachel-hero .rachel-quote-mark--close {
+  right: 28px;
+  bottom: 280px;
+}
+
+@media (max-width: 768px) {
+  .rachel-hero {
+    padding: 40px 16px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .rachel-hero .heading {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .rachel-hero .heading h1 {
+    font-size: 34px;
+    letter-spacing: 2px;
+    line-height: 0.95;
+    margin: 0;
+  }
+  .rachel-hero .content {
+    display: grid;
+    align-items: start;
+    gap: 12px;
+  }
+  .rachel-hero .left {
+    max-width: 100%;
+  }
+  .rachel-hero .left p {
+    font-size: 16px;
+    line-height: 110%;
+    margin-top: 0;
+  }
+  .rachel-hero .center {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .rachel-hero .rachel-image-frame {
+    width: 100%;
+    padding: 7px;
+  }
+  .rachel-hero .rachel-image-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/4;
+    max-width: none;
+    object-fit: cover;
+  }
+  .rachel-hero .rachel-image-caption {
+    font-size: 16px;
+    padding: 10px 2px 5px;
+  }
+  .rachel-hero .right {
+    grid-column: 1/-1;
+    width: 100%;
+    max-width: 320px;
+    margin: 24px auto 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .rachel-hero .right p {
+    margin: 0px;
+    font-size: 24px;
+    max-width: 100%;
+  }
+  .rachel-hero .rachel-quote-mark {
+    font-size: 44px;
+    line-height: 1;
+    color: #4e4d2e;
+  }
+  .rachel-hero .rachel-quote-mark--open {
+    top: -8px;
+    left: 14px;
+  }
+  .rachel-hero .rachel-quote-mark--close {
+    top: 56px;
+    right: 6px;
+  }
+}
+
+/*# sourceMappingURL=custom-styles.css.map */
