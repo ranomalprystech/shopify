@@ -250,24 +250,28 @@
         "logo_UXte9g": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/podcast_feature_02.png",
             "link": ""
           }
         },
         "logo_bdgRKV": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/choose_feature_03.png",
             "link": ""
           }
         },
         "logo_4Nn9Qj": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/Frame_33_1.png",
             "link": ""
           }
         },
         "logo_C8remD": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/Frame_33_2.png",
             "link": ""
           }
         }
