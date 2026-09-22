@@ -1,7 +1,10 @@
 @use "./variable" as *;
+@use "./ways-to-work";
+@use "./rachel.story.scss";
+@use "./as-featured-in.scss";
+
 
 .rachel-landing {
-  min-height: 100vh;
   background: $color-bg;
   color: $color-primary;
 }
@@ -137,6 +140,34 @@
       bottom: 280px;
     }
   }
+}
+
+.product-card__content {
+  border: 1px solid #380c0d !important;
+  border-radius: 0;
+  color: #380c0d !important;
+  overflow: hidden;
+}
+
+.product-card__content img {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.card-gallery {
+  border-radius: 0;
+}
+
+/* Grid ka gap kam karein Figma jaisa tight spacing ke liye */
+.product-grid,
+[class*="grid"] {
+  gap: 35px;
+}
+
+.text-block--ASWF0ZDRTdlpjVHphQ__product_list_text_YFtzcL {
+  --font-family: "Fontspring Demo", serif !important;
 }
 
 @media (max-width: 768px) {

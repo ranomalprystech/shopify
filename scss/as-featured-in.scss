@@ -1,0 +1,145 @@
+@use "./variable" as *;
+
+.as-featured-in {
+  background: $color-bg;
+  padding: 60px 16px;
+
+  &__inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__heading {
+    font-family: "Fontspring Demo", serif;
+    font-size: clamp(28px, 5vw, 48px);
+    color: $color-primary;
+    margin: 0 0 32px;
+  }
+
+  &__carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__track {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    flex: 1;
+    padding: 4px;
+
+    // Hide scrollbar visually while keeping it scrollable
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__slide {
+    flex: 0 0 calc(50% - 8px);
+    scroll-snap-align: start;
+    border: 1px solid $color-border;
+    background: #fff;
+
+    img,
+    svg {
+      display: block;
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+  }
+
+  &__arrow {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background: $color-olive;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: darken($color-olive, 10%);
+    }
+  }
+
+  &__dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  &__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    background: $color-border;
+    padding: 0;
+    cursor: pointer;
+
+    &.is-active {
+      background: $color-olive;
+    }
+  }
+
+  &__subheading {
+    margin: 32px 0 24px;
+    font-family: "Fontspring Demo", serif;
+    font-size: clamp(18px, 3vw, 26px);
+    color: $color-primary;
+  }
+
+  &__spotify {
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+
+    iframe {
+      display: block;
+      width: 100%;
+      border: none;
+    }
+  }
+
+  // Tablet: 3 logos visible
+  @media (min-width: 600px) {
+    &__slide {
+      flex: 0 0 calc(33.333% - 11px);
+    }
+  }
+
+  // Desktop: 5 logos visible, matching screenshot
+  @media (min-width: 1024px) {
+    padding: 80px 40px;
+
+    &__slide {
+      flex: 0 0 calc(20% - 13px);
+
+      img,
+      svg {
+        height: 160px;
+      }
+    }
+
+    &__arrow {
+      width: 44px;
+      height: 44px;
+      font-size: 16px;
+    }
+  }
+}

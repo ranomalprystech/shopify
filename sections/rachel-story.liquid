@@ -1,0 +1,37 @@
+<section class="rachel-story">
+
+  <div class="inner">
+
+    {% if section.settings.envelope_image != blank %}
+      <div class="envelope-image">
+        {{ section.settings.envelope_image
+ | image_url: width: 2000
+ | image_tag:
+ loading: 'lazy',
+ widths: '600, 900, 1200, 1600, 2000',
+ class: 'envelope-image__img'
+        }}
+      </div>
+    {% endif %}
+
+  </div>
+
+</section>
+
+{% schema %}
+  {
+    "name": "Rachel's Story",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "envelope_image",
+        "label": "Envelope image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Rachel's Story"
+      }
+    ]
+  }
+{% endschema %}

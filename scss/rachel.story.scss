@@ -1,0 +1,40 @@
+@use "./variable" as *;
+
+
+.rachel-story {
+  background: $color-bg;
+  padding: 80px 40px;
+
+  .inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .envelope-image {
+    width: 100%;
+  }
+
+  .envelope-image__img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 16px;
+
+    .inner {
+      max-width: 100%;
+    }
+
+    .envelope-image {
+      width: 100%;
+    }
+
+    .envelope-image__img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
