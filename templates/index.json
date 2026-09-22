@@ -76,7 +76,7 @@
                 "letter_spacing": "normal",
                 "case": "uppercase",
                 "wrap": "pretty",
-                "text_color": "#380C0D",
+                "text_color": "#380c0d",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -117,7 +117,7 @@
           "static": true,
           "settings": {
             "product_card_gap": 4,
-            "background_color": "{{ settings.color_palette.background }}",
+            "background_color": "#f5e7ba",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
@@ -134,10 +134,10 @@
               "name": "t:names.product_card_media",
               "settings": {
                 "image_ratio": "adapt",
-                "border": "none",
+                "border": "solid",
                 "border_width": 1,
                 "border_opacity": 100,
-                "border_color": "",
+                "border_color": "{{ settings.color_palette.background }}",
                 "border_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
@@ -152,7 +152,7 @@
               "settings": {
                 "width": "100%",
                 "max_width": "normal",
-                "alignment": "left",
+                "alignment": "center",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
@@ -160,12 +160,12 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "",
-                "background": false,
-                "background_color": "#00000026",
+                "text_color": "#380c0d",
+                "background": true,
+                "background_color": "#f5e7ba",
                 "corner_radius": 0,
                 "padding-block-start": 4,
-                "padding-block-end": 0,
+                "padding-block-end": 20,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
@@ -180,15 +180,15 @@
                 "show_tax_info": false,
                 "type_preset": "h6",
                 "width": "100%",
-                "alignment": "left",
+                "alignment": "center",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
-                "text_color": "",
+                "text_color": "#380c0d",
                 "padding-block-start": 0,
-                "padding-block-end": 0,
+                "padding-block-end": 25,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
@@ -207,25 +207,90 @@
         "collection": "all",
         "layout_type": "grid",
         "carousel_on_mobile": false,
-        "max_products": 8,
-        "columns": 4,
+        "max_products": 6,
+        "columns": 3,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
-        "columns_gap": 8,
+        "columns_gap": 35,
         "rows_gap": 24,
         "icons_style": "arrow",
         "icons_shape": "none",
         "section_width": "page-width",
         "horizontal_alignment": "flex-start",
         "gap": 28,
-        "background_color": "#F5E7BA",
+        "background_color": "#f5e7ba",
         "padding-block-start": 48,
         "padding-block-end": 48
+      }
+    },
+    "ways_to_work_nQ9DYW": {
+      "type": "ways-to-work",
+      "name": "Ways to Work With Rachel",
+      "settings": {
+        "heading": "WAYS TO WORK WITH RACHEL",
+        "intro": "Rachel is available for in-person speaking engagements, workshops, summits, and more.",
+        "previous_text": "She has previously shared her voice and presence at:",
+        "previous_points": "– Harvard’s Mental Health Creator’s Summit.\n– Keynote speaker at Cadre’s Wellness Summit in Minneapolis.\n– Guest speaker at the Moving America’s Soul on Suicide film premiere (in conjunction with the 988 Crisis Line).\n– Facilitator & co-host of Saturday Sabbatical Wellness in Seattle.",
+        "topics_text": "Rachel speaks on topics like:",
+        "topic_points": "– What it means to be “well” and redefining wellness\n– Belonging and being your true self\n– Radical acceptance and embracing reality\n– Suicide awareness and prevention\n– Eating disorder recovery\n– Grief and reclaiming self",
+        "closing": "While these are generally themes Rachel focuses on, she is always happy to work with folks and create new and meaningful experiences or workshops based on their needs, so please don’t hesitate to reach out and begin a conversation!",
+        "image": "shopify://shop_images/new_Rectangle.png"
+      }
+    },
+    "as_featured_in_8jjTPR": {
+      "type": "as-featured-in",
+      "blocks": {
+        "logo_DmKwtW": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Frame_33.png",
+            "link": ""
+          }
+        },
+        "logo_UXte9g": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_bdgRKV": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_4Nn9Qj": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_C8remD": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_DmKwtW",
+        "logo_UXte9g",
+        "logo_bdgRKV",
+        "logo_4Nn9Qj",
+        "logo_C8remD"
+      ],
+      "name": "As Featured In",
+      "settings": {
+        "heading": "As Featured In:",
+        "subheading": "Find all of my podcast interviews compiled in the playlist below:",
+        "spotify_embed_url": ""
       }
     }
   },
   "order": [
     "custom_hero_LVRDL4",
-    "product_list_fa6P9H"
+    "product_list_fa6P9H",
+    "ways_to_work_nQ9DYW",
+    "as_featured_in_8jjTPR"
   ]
 }

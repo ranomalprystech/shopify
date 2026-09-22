@@ -5,7 +5,7 @@
   padding: 60px 16px;
 
   &__inner {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     text-align: center;
   }
@@ -132,7 +132,9 @@
 
       img,
       svg {
-        height: 160px;
+        height: 200px;
+        width: 200px;
+        padding: 10px;
       }
     }
 

@@ -138,7 +138,7 @@
   padding: 60px 16px;
 }
 .as-featured-in__inner {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
@@ -247,7 +247,9 @@
   }
   .as-featured-in__slide img,
   .as-featured-in__slide svg {
-    height: 160px;
+    height: 200px;
+    width: 200px;
+    padding: 10px;
   }
   .as-featured-in__arrow {
     width: 44px;
