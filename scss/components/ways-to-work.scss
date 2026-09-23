@@ -1,4 +1,4 @@
-@use "./variable" as *;
+@use "../vars" as *;
 
 .work_section_bg {
   background: $color-bg;
@@ -17,7 +17,7 @@
     h1 {
       margin: 0;
       color: $color-primary;
-      font-family: "Fontspring Demo", serif;
+      font-family: "The Seasons";
       font-size: 50px;
       letter-spacing: 1px;
       line-height: auto;
@@ -29,11 +29,10 @@
     display: grid;
     grid-template-columns: 1fr 400px;
     align-items: center;
-    gap: 45px;
+    gap: 60px;
   }
 
   .left {
-    
     p {
       color: $color-primary;
       font-family: $krub;
@@ -53,7 +52,6 @@
     }
 
     .closing {
-    //   margin-top: 30px;
       margin-bottom: 0;
     }
   }
@@ -78,7 +76,7 @@
 
 @media (max-width: 768px) {
   .work_landing {
-    padding: 50px 20px;
+    padding: 25px 20px;
 
     .heading {
       margin-bottom: 30px;

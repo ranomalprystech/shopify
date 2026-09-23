@@ -1,0 +1,30 @@
+@use "../vars" as *;
+
+.hero {
+  height: 100vh;
+  background-color: $color-bg;
+
+  .inner {
+    max-width: 800px;
+    padding: '60px 40px';
+    margin: 20px auto;
+  }
+
+  .main-heading h1 {
+    font-size: 72px;
+    text-align: center;
+    padding-top: 60px 0px; 
+    color: $color-primary;
+    font-family: "The Seasons";
+  }
+
+  .left {
+    text-align: left;
+    width: 400px;
+  }
+
+  .center img {
+    width: 200px;
+    height: 300px
+  }
+}

@@ -15,7 +15,7 @@
 .work_landing .heading h1 {
   margin: 0;
   color: #380c0d;
-  font-family: "Fontspring Demo", serif;
+  font-family: "The Seasons";
   font-size: 50px;
   letter-spacing: 1px;
   line-height: auto;
@@ -25,7 +25,7 @@
   display: grid;
   grid-template-columns: 1fr 400px;
   align-items: center;
-  gap: 45px;
+  gap: 60px;
 }
 .work_landing .left p {
   color: #380c0d;
@@ -63,7 +63,7 @@
 
 @media (max-width: 768px) {
   .work_landing {
-    padding: 50px 20px;
+    padding: 25px 20px;
   }
   .work_landing .heading {
     margin-bottom: 30px;
@@ -134,7 +134,6 @@
 }
 
 .as-featured-in {
-  background: #f5e7ba;
   padding: 60px 16px;
 }
 .as-featured-in__inner {
@@ -143,10 +142,10 @@
   text-align: center;
 }
 .as-featured-in__heading {
-  font-family: "Fontspring Demo", serif;
+  font-family: "The Seasons";
   font-size: clamp(28px, 5vw, 48px);
   color: #380c0d;
-  margin: 0 0 32px;
+  margin-bottom: 50px;
 }
 .as-featured-in__carousel {
   position: relative;
@@ -194,9 +193,6 @@
   align-items: center;
   justify-content: center;
   transition: background 0.2s ease;
-}
-.as-featured-in__arrow:hover {
-  background: rgb(45.9193548387, 45.3306451613, 27.0806451613);
 }
 .as-featured-in__dots {
   display: flex;
@@ -258,6 +254,31 @@
   }
 }
 
+.hero {
+  height: 100vh;
+  background-color: #f5e7ba;
+}
+.hero .inner {
+  max-width: 800px;
+  padding: "60px 40px";
+  margin: 20px auto;
+}
+.hero .main-heading h1 {
+  font-size: 72px;
+  text-align: center;
+  padding-top: 60px 0px;
+  color: #380c0d;
+  font-family: "The Seasons";
+}
+.hero .left {
+  text-align: left;
+  width: 400px;
+}
+.hero .center img {
+  width: 200px;
+  height: 300px;
+}
+
 .rachel-landing {
   background: #f5e7ba;
   color: #380c0d;
@@ -274,9 +295,8 @@
 }
 .rachel-hero .heading h1 {
   color: #380c0d;
-  font-family: "Fontspring Demo", serif;
+  font-family: "The Seasons";
   font-size: 72px;
-  letter-spacing: 8px;
   position: relative;
 }
 .rachel-hero .content {
@@ -395,7 +415,6 @@
   border-radius: 0;
 }
 
-/* Grid ka gap kam karein Figma jaisa tight spacing ke liye */
 .product-grid,
 [class*=grid] {
   gap: 35px;
@@ -403,6 +422,11 @@
 
 .text-block--ASWF0ZDRTdlpjVHphQ__product_list_text_YFtzcL {
   --font-family: "Fontspring Demo", serif !important;
+}
+
+.text-block--ASWF0ZDRTdlpjVHphQ__product_list_text_YFtzcL h3 {
+  font-family: "The Seasons";
+  font-size: 64px;
 }
 
 @media (max-width: 768px) {
@@ -416,9 +440,7 @@
     margin: 0 auto;
   }
   .rachel-hero .heading h1 {
-    font-size: 34px;
-    letter-spacing: 2px;
-    line-height: 0.95;
+    font-size: 24px;
     margin: 0;
   }
   .rachel-hero .content {
@@ -481,6 +503,10 @@
   .rachel-hero .rachel-quote-mark--close {
     top: 56px;
     right: 6px;
+  }
+  .text-block--ASWF0ZDRTdlpjVHphQ__product_list_text_YFtzcL h3 {
+    font-family: "The Seasons";
+    font-size: 40px;
   }
 }
 

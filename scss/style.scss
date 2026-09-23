@@ -1,7 +1,9 @@
-@use "./variable" as *;
-@use "./ways-to-work";
-@use "./rachel.story.scss";
-@use "./as-featured-in.scss";
+@use "./vars" as *;
+@use "./components/ways-to-work.scss";
+@use "./components/rachel.story.scss";
+@use "./components/as-featured-in.scss";
+@use "./components/hero_section.scss";
+
 
 
 .rachel-landing {
@@ -20,9 +22,8 @@
 
     h1 {
       color: $color-primary;
-      font-family: "Fontspring Demo", serif;
+      font-family: "The Seasons";
       font-size: 72px;
-      letter-spacing: 8px;
       position: relative;
     }
   }
@@ -160,7 +161,6 @@
   border-radius: 0;
 }
 
-/* Grid ka gap kam karein Figma jaisa tight spacing ke liye */
 .product-grid,
 [class*="grid"] {
   gap: 35px;
@@ -168,6 +168,13 @@
 
 .text-block--ASWF0ZDRTdlpjVHphQ__product_list_text_YFtzcL {
   --font-family: "Fontspring Demo", serif !important;
+}
+
+.text-block--ASWF0ZDRTdlpjVHphQ__product_list_text_YFtzcL {
+  h3 {
+    font-family: "The Seasons";
+    font-size: 64px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -181,9 +188,9 @@
       margin: 0 auto;
 
       h1 {
-        font-size: 34px;
-        letter-spacing: 2px;
-        line-height: 0.95;
+        font-size: 24px;
+        // letter-spacing: 2px;
+        // line-height: 0.95;
         margin: 0;
       }
     }
@@ -260,6 +267,12 @@
         top: 56px;
         right: 6px;
       }
+    }
+  }
+  .text-block--ASWF0ZDRTdlpjVHphQ__product_list_text_YFtzcL {
+    h3 {
+      font-family: "The Seasons";
+      font-size: 40px;
     }
   }
 }

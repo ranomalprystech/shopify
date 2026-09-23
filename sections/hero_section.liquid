@@ -1,0 +1,107 @@
+<section class="hero">
+  <div class="inner">
+    <div class="main-heading">
+      {% if section.settings.heading != blank %}
+        <h1 class="heading">{{ section.settings.heading }}</h1>
+      {% endif %}
+    </div>
+    <div class="left">
+      {% if section.settings.left_paragraph_1 != blank %}
+        <p class="text">{{ section.settings.left_paragraph_1 }}</p>
+      {% endif %}
+
+      {% if section.settings.left_paragraph_2 != blank %}
+        <p class="text">{{ section.settings.left_paragraph_2 }}</p>
+      {% endif %}
+
+      {% if section.settings.left_paragraph_bold != blank %}
+        <p class="text bold">{{ section.settings.left_paragragp_bold }}</p>
+      {% endif %}
+    </div>
+    <div class="center">
+      {% if section.settings.image != blank %}
+        <div class="image">
+          {{ section.settings.image | image_url: width: 1000 | image_tag: loading: 'lazy',
+ widths: '400, 600, 800, 1000' }}
+        </div>
+      {% endif %}
+
+      {% if section.settings.image_caption != blank %}
+        <p class="image-caption">{{ section.settings.image_caption }}</p>
+      {% endif %}
+    </div>
+    <div class="right" !=blank>
+      <div class="open-quote">
+        {% if section.settings.image != blank %}
+          {{ section.settings.image | image_url: width: 1000 | image_tag: loading: 'lazy',
+ widths: '400, 600, 800, 1000' }}
+        {% endif %}
+      </div>
+      <div class="text">
+        {% if section.settings.image_caption != blank %}
+          <p class="quote-text">{{ section.settings.quote_text }}</p>
+        {% endif %}
+      </div>
+      <div class="close-quote">
+        {% if section.settings.close_quote != blank %}
+          {{ section.settings.close_quote }}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Hero Section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Main Heading",
+        "default": "WORDS FOR THE HEALING JOURNEY."
+      },
+      {
+        "type": "textarea",
+        "id": "left_paragraph_1",
+        "label": "left Paragraph 01"
+      },
+      {
+        "type": "textarea",
+        "id": "left_paragraph_2",
+        "label": "left Paragraph 02"
+      },
+      {
+        "type": "textarea",
+        "id": "left_paragraph_bold",
+        "label": "left Paragraph Bold"
+      }, {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Main Image"
+      }, {
+        "type": "text",
+        "id": "image_caption",
+        "label": "Main Image Caption"
+      }, {
+        "type": "image_picker",
+        "id": "open_quote",
+        "label": "Open Quote"
+      }, {
+        "type": "text",
+        "id": "quote_text",
+        "label": "Quote Text"
+      }, {
+        "type": "image_picker",
+        "id": "close_quote",
+        "label": "Close Quote"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Hero Section"
+      }
+    ]
+  }
+{% endschema %}
