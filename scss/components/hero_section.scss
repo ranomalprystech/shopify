@@ -18,13 +18,26 @@
     font-family: "The Seasons";
   }
 
+  .content {
+    display: flex;
+    gap: 20px;
+    top: 40px;
+  }
+
   .left {
     text-align: left;
     width: 400px;
   }
 
   .center img {
-    width: 200px;
-    height: 300px
+    width: 500px;
+    height: 500px;
   }
+
+  .right img {
+    width: 60px;
+    height: 58px
+  }
+
+  
 }

@@ -5,47 +5,50 @@
         <h1 class="heading">{{ section.settings.heading }}</h1>
       {% endif %}
     </div>
-    <div class="left">
-      {% if section.settings.left_paragraph_1 != blank %}
-        <p class="text">{{ section.settings.left_paragraph_1 }}</p>
-      {% endif %}
+    <div class="content">
+      <div class="left">
+        {% if section.settings.left_paragraph_1 != blank %}
+          <p class="text">{{ section.settings.left_paragraph_1 }}</p>
+        {% endif %}
 
-      {% if section.settings.left_paragraph_2 != blank %}
-        <p class="text">{{ section.settings.left_paragraph_2 }}</p>
-      {% endif %}
+        {% if section.settings.left_paragraph_2 != blank %}
+          <p class="text">{{ section.settings.left_paragraph_2 }}</p>
+        {% endif %}
 
-      {% if section.settings.left_paragraph_bold != blank %}
-        <p class="text bold">{{ section.settings.left_paragragp_bold }}</p>
-      {% endif %}
-    </div>
-    <div class="center">
-      {% if section.settings.image != blank %}
-        <div class="image">
-          {{ section.settings.image | image_url: width: 1000 | image_tag: loading: 'lazy',
- widths: '400, 600, 800, 1000' }}
-        </div>
-      {% endif %}
-
-      {% if section.settings.image_caption != blank %}
-        <p class="image-caption">{{ section.settings.image_caption }}</p>
-      {% endif %}
-    </div>
-    <div class="right" !=blank>
-      <div class="open-quote">
+        {% if section.settings.left_paragraph_bold != blank %}
+          <p class="text bold">{{ section.settings.left_paragraph_bold }}</p>
+        {% endif %}
+      </div>
+      <div class="center">
         {% if section.settings.image != blank %}
-          {{ section.settings.image | image_url: width: 1000 | image_tag: loading: 'lazy',
+          <div class="image">
+            {{ section.settings.image | image_url: width: 1000 | image_tag: loading: 'lazy',
  widths: '400, 600, 800, 1000' }}
+          </div>
         {% endif %}
-      </div>
-      <div class="text">
+
         {% if section.settings.image_caption != blank %}
-          <p class="quote-text">{{ section.settings.quote_text }}</p>
+          <p class="image-caption">{{ section.settings.image_caption }}</p>
         {% endif %}
       </div>
-      <div class="close-quote">
-        {% if section.settings.close_quote != blank %}
-          {{ section.settings.close_quote }}
-        {% endif %}
+      <div class="right" !=blank>
+        <div class="open-quote">
+          {% if section.settings.open_quote != blank %}
+            {{ section.settings.open_quote | image_url: width: '1x1' | image_tag: loading: 'lazy',
+ widths: '400, 600, 800, 1000' }}
+          {% endif %}
+        </div>
+        <div class="text">
+          {% if section.settings.quote_text != blank %}
+            <p class="quote-text">{{ section.settings.quote_text }}</p>
+          {% endif %}
+        </div>
+        <div class="close-quote">
+          {% if section.settings.close_quote != blank %}
+            {{ section.settings.close_quote | image_url: width: 1000 | image_tag: loading: 'lazy',
+ widths: '400, 600, 800, 1000' }}
+          {% endif %}
+        </div>
       </div>
     </div>
   </div>
