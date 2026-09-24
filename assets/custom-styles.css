@@ -1,522 +1,263 @@
-.work_section_bg {
-  background: #f5e7ba;
-  color: #380c0d;
-}
-
-.work_landing {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 40px;
-}
-.work_landing .heading {
-  max-width: 800px;
-  text-align: center;
-}
-.work_landing .heading h1 {
-  margin: 0;
-  color: #380c0d;
-  font-family: "The Seasons";
-  font-size: 50px;
-  letter-spacing: 1px;
-  line-height: auto;
-}
-.work_landing .content {
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 400px;
-  align-items: center;
-  gap: 60px;
-}
-.work_landing .left p {
-  color: #380c0d;
-  font-family: "Krub", sans-serif;
-  font-size: 16px;
-  line-height: 100%;
-}
-.work_landing .left .intro,
-.work_landing .left .closing {
-  font-family: "Handlee", cursive;
-  font-size: 22px;
-  line-height: 100%;
-}
-.work_landing .left .intro {
-  margin-bottom: 30px;
-}
-.work_landing .left .closing {
-  margin-bottom: 0;
-}
-.work_landing .right {
-  width: 100%;
-  max-width: 400px;
-  justify-self: end;
-}
-.work_landing .right img {
-  display: block;
-  width: 100%;
-  height: 500px;
-  padding: 10px;
-  border: 1px solid #380c0d;
-  border-radius: 200px 200px 0 0;
-  object-fit: cover;
-  box-sizing: border-box;
-}
-
-@media (max-width: 768px) {
-  .work_landing {
-    padding: 25px 20px;
-  }
-  .work_landing .heading {
-    margin-bottom: 30px;
-  }
-  .work_landing .heading h1 {
-    font-size: 38px;
-    letter-spacing: 2px;
-    line-height: 0.95;
-  }
-  .work_landing .content {
-    max-width: 100%;
-    grid-template-columns: 1fr;
-    gap: 35px;
-  }
-  .work_landing .left {
-    max-width: 100%;
-  }
-  .work_landing .left p {
-    font-size: 15px;
-    line-height: 1.3;
-  }
-  .work_landing .left .intro,
-  .work_landing .left .closing {
-    font-size: 20px;
-  }
-  .work_landing .right {
-    max-width: 300px;
-    justify-self: center;
-  }
-  .work_landing .right img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 3/4;
-    border-radius: 150px 150px 0 0;
-  }
-}
-.rachel-story {
-  background: #f5e7ba;
-  padding: 80px 40px;
-}
-.rachel-story .inner {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.rachel-story .envelope-image {
-  width: 100%;
-}
-.rachel-story .envelope-image__img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-@media (max-width: 768px) {
-  .rachel-story {
-    padding: 40px 16px;
-  }
-  .rachel-story .inner {
-    max-width: 100%;
-  }
-  .rachel-story .envelope-image {
-    width: 100%;
-  }
-  .rachel-story .envelope-image__img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.as-featured-in {
-  padding: 60px 16px;
-}
-.as-featured-in__inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-}
-.as-featured-in__heading {
-  font-family: "The Seasons";
-  font-size: clamp(28px, 5vw, 48px);
-  color: #380c0d;
-  margin-bottom: 50px;
-}
-.as-featured-in__carousel {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.as-featured-in__track {
-  display: flex;
-  gap: 16px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  flex: 1;
-  padding: 4px;
-  scrollbar-width: none;
-}
-.as-featured-in__track::-webkit-scrollbar {
-  display: none;
-}
-.as-featured-in__slide {
-  flex: 0 0 calc(50% - 8px);
-  scroll-snap-align: start;
-  border: 1px solid #8f856d;
-  background: #fff;
-}
-.as-featured-in__slide img,
-.as-featured-in__slide svg {
-  display: block;
-  width: 100%;
-  height: 140px;
-  object-fit: cover;
-}
-.as-featured-in__arrow {
-  flex-shrink: 0;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border: none;
-  background: #4e4d2e;
-  color: #fff;
-  font-size: 14px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.2s ease;
-}
-.as-featured-in__dots {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 16px;
-}
-.as-featured-in__dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  border: none;
-  background: #8f856d;
-  padding: 0;
-  cursor: pointer;
-}
-.as-featured-in__dot.is-active {
-  background: #4e4d2e;
-}
-.as-featured-in__subheading {
-  margin: 32px 0 24px;
-  font-family: "Fontspring Demo", serif;
-  font-size: clamp(18px, 3vw, 26px);
-  color: #380c0d;
-}
-.as-featured-in__spotify {
-  max-width: 700px;
-  margin: 0 auto;
-  border-radius: 12px;
-  overflow: hidden;
-}
-.as-featured-in__spotify iframe {
-  display: block;
-  width: 100%;
-  border: none;
-}
-@media (min-width: 600px) {
-  .as-featured-in__slide {
-    flex: 0 0 calc(33.333% - 11px);
-  }
-}
-@media (min-width: 1024px) {
-  .as-featured-in {
-    padding: 80px 40px;
-  }
-  .as-featured-in__slide {
-    flex: 0 0 calc(20% - 13px);
-  }
-  .as-featured-in__slide img,
-  .as-featured-in__slide svg {
-    height: 200px;
-    width: 200px;
-    padding: 10px;
-  }
-  .as-featured-in__arrow {
-    width: 44px;
-    height: 44px;
-    font-size: 16px;
-  }
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 .hero {
-  height: 100vh;
   background-color: #f5e7ba;
+  padding: 0px 40px;
 }
 .hero .inner {
-  max-width: 800px;
-  padding: "60px 40px";
-  margin: 20px auto;
-}
-.hero .main-heading h1 {
-  font-size: 72px;
-  text-align: center;
-  padding-top: 60px 0px;
-  color: #380c0d;
-  font-family: "The Seasons";
-}
-.hero .content {
-  display: flex;
-  gap: 20px;
-  top: 40px;
-}
-.hero .left {
-  text-align: left;
-  width: 400px;
-}
-.hero .center img {
-  width: 500px;
-  height: 500px;
-}
-.hero .right img {
-  width: 60px;
-  height: 58px;
-}
-
-.rachel-landing {
-  background: #f5e7ba;
-  color: #380c0d;
-}
-
-.rachel-hero {
   max-width: 1240px;
-  margin: 0 auto;
-  padding: 80px 40px;
+  margin: 0px auto;
 }
-.rachel-hero .heading {
-  max-width: 800px;
+.hero .inner .main-heading h1 {
+  font-size: 72px;
   text-align: center;
-}
-.rachel-hero .heading h1 {
   color: #380c0d;
   font-family: "The Seasons";
-  font-size: 72px;
+  margin: auto;
   position: relative;
+  max-width: 672px;
+  top: 48px;
 }
-.rachel-hero .content {
+.hero .inner .content {
   display: flex;
-}
-.rachel-hero .left {
-  max-width: 400px;
-  justify-self: end;
-  color: #48191b;
-}
-.rachel-hero .left p {
-  font-size: 20px;
-  line-height: 110%;
-  font-family: "Krub", sans-serif;
-}
-.rachel-hero .left p:last-child {
-  margin-bottom: 0;
-  font-weight: 700;
-  color: #4e4d2e;
-}
-.rachel-hero .highlight {
-  font-style: italic;
-  font-weight: 700;
-}
-.rachel-hero .center {
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 360px;
-  margin-top: -120px;
+  gap: 20px;
 }
-.rachel-hero .rachel-image-frame {
-  width: 100%;
+.hero .inner .content .left {
+  text-align: left;
+  max-width: 32%;
+  font-family: "Krub", sans-serif;
+  font-size: 20px;
+}
+.hero .inner .content .left .text {
+  line-height: 110%;
+  padding: 20px 0px;
+}
+.hero .inner .content .left .text-bold {
+  font-weight: bold;
+  color: #4e4d2e;
+  font-style: italic;
+  line-height: 110%;
+}
+.hero .inner .content .center {
+  max-width: 35%;
+}
+.hero .inner .content .center .image-frame {
   border: 1px solid #8f856d;
   padding: 10px;
-  border-radius: 200px 200px 0 0;
+  max-width: 100%;
+  border-radius: 200px 200px 0px 0px;
 }
-.rachel-hero .rachel-image-frame img {
-  display: block;
-  max-width: 400px;
-  height: 450px;
+.hero .inner .content .center .image-frame img {
+  aspect-ratio: 0.88;
   object-fit: cover;
-  border-radius: 200px 200px 0 0;
+  display: block;
+  border-radius: 200px 200px 0px 0px;
 }
-.rachel-hero .rachel-image-caption {
-  padding: 13px 4px 7px;
-  color: #380c0d;
+.hero .inner .content .center .image-caption {
+  font-size: 36px;
+  font-family: "The Seasons";
   text-align: center;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 20px;
-  line-height: 1.05;
-  text-transform: uppercase;
+  line-height: 100%;
+  margin: 20px 9px;
+  color: #380c0d;
 }
-.rachel-hero .rachel-button {
-  display: inline-block;
-  margin-top: 22px;
-  padding: 11px 22px;
+.hero .inner .content .right {
+  max-width: 32%;
+}
+.hero .inner .content .right img {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  top: 40px;
+}
+.hero .inner .content .right .close-quote img {
+  margin-left: auto;
+  position: relative;
+  top: -26px;
+  left: 10px;
+}
+.hero .inner .content .right .quote-text {
+  font-family: "Handlee", cursive;
+  font-size: 32px;
+  line-height: 100%;
+  font-weight: 200;
+  margin-left: 68px;
+  margin-top: 23px;
+}
+.hero .inner .hero-image-button {
+  width: fit-content;
+  margin: 25px auto;
+  padding: 16px 20px;
   border: 1px solid #48191b;
-  border-radius: 30px;
+  border-radius: 32px;
   color: #48191b;
-  background: transparent;
-  font-size: 14px;
-  text-decoration: none;
-  transition: all 0.25s ease;
+  font-size: 20px;
 }
-.rachel-hero .rachel-button:hover {
+.hero .inner .hero-image-button:hover {
   color: #f5e7ba;
   background: #48191b;
 }
-.rachel-hero .right {
-  position: relative;
-  display: flex;
-  align-items: start;
-  justify-self: center;
-}
-.rachel-hero .right p {
-  margin: 50px;
-  color: #4e4d2e;
-  font-size: 32px;
-  font-family: "Handlee", cursive;
-  line-height: 100%;
-  max-width: 312px;
-}
-.rachel-hero .rachel-quote-mark {
-  position: absolute;
-  color: #4e4d2e;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 65px;
-  font-weight: 700;
-  line-height: 0.5;
-}
-.rachel-hero .rachel-quote-mark--open {
-  top: 52px;
-  left: 10px;
-}
-.rachel-hero .rachel-quote-mark--close {
-  right: 28px;
-  bottom: 280px;
-}
 
-.product-card__content {
-  border: 1px solid #380c0d !important;
-  border-radius: 0;
-  color: #380c0d !important;
-  overflow: hidden;
-}
-
-.product-card__content img {
-  aspect-ratio: 4/5;
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-}
-
-.card-gallery {
-  border-radius: 0;
-}
-
-.product-grid,
-[class*=grid] {
-  gap: 35px;
-}
-
-.text-block--ASWF0ZDRTdlpjVHphQ__product_list_text_YFtzcL {
-  --font-family: "Fontspring Demo", serif !important;
-}
-
-.text-block--ASWF0ZDRTdlpjVHphQ__product_list_text_YFtzcL h3 {
-  font-family: "The Seasons";
-  font-size: 64px;
-}
-
-@media (max-width: 768px) {
-  .rachel-hero {
-    padding: 40px 16px;
-    max-width: 100%;
-    overflow: hidden;
-  }
-  .rachel-hero .heading {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-  .rachel-hero .heading h1 {
-    font-size: 24px;
-    margin: 0;
-  }
-  .rachel-hero .content {
-    display: grid;
-    align-items: start;
-    gap: 12px;
-  }
-  .rachel-hero .left {
-    max-width: 100%;
-  }
-  .rachel-hero .left p {
-    font-size: 16px;
-    line-height: 110%;
-    margin-top: 0;
-  }
-  .rachel-hero .center {
-    width: 100%;
-    max-width: 280px;
-    margin: 0 auto;
-  }
-  .rachel-hero .rachel-image-frame {
-    width: 100%;
-    padding: 7px;
-  }
-  .rachel-hero .rachel-image-frame img {
-    display: block;
-    width: 100%;
+@media (max-width: 1024px) {
+  .hero {
     height: auto;
-    aspect-ratio: 3/4;
-    max-width: none;
-    object-fit: cover;
+    padding: 20px;
   }
-  .rachel-hero .rachel-image-caption {
-    font-size: 16px;
-    padding: 10px 2px 5px;
+  .hero .inner .main-heading h1 {
+    font-size: 36px;
+    top: 0;
   }
-  .rachel-hero .right {
-    grid-column: 1/-1;
-    width: 100%;
-    max-width: 320px;
-    margin: 24px auto 0;
-    display: flex;
+  .hero .inner .content {
+    flex-direction: column;
     align-items: center;
+  }
+  .hero .inner .content .left,
+  .hero .inner .content .center,
+  .hero .inner .content .right {
+    max-width: 100%;
+    width: 100%;
+  }
+  .hero .inner .content .left {
+    margin: 0;
     text-align: center;
   }
-  .rachel-hero .right p {
-    margin: 0px;
-    font-size: 24px;
-    max-width: 100%;
+  .hero .inner .content .left .text,
+  .hero .inner .content .left .text-bold {
+    text-align: left;
   }
-  .rachel-hero .rachel-quote-mark {
-    font-size: 44px;
-    line-height: 1;
-    color: #4e4d2e;
+  .hero .inner .content .left .text {
+    padding: 10px 0;
   }
-  .rachel-hero .rachel-quote-mark--open {
-    top: -8px;
-    left: 14px;
+  .hero .inner .content .center .image-frame,
+  .hero .inner .content .center .image-frame img {
+    width: 500px;
+    height: 600px;
+    border-radius: 200px 200px 0 0;
   }
-  .rachel-hero .rachel-quote-mark--close {
-    top: 56px;
-    right: 6px;
+  .hero .inner .content .right {
+    top: 0;
+    margin: 20px 0;
+    text-align: center;
   }
-  .text-block--ASWF0ZDRTdlpjVHphQ__product_list_text_YFtzcL h3 {
-    font-family: "The Seasons";
-    font-size: 40px;
+  .hero .inner .content .right img {
+    max-width: 36px;
+    max-height: 36px;
   }
+  .hero .inner .content .right .open-quote img {
+    top: 23px;
+  }
+  .hero .inner .content .right .quote-text {
+    margin-left: 40px;
+    text-align: left;
+    width: 274px;
+  }
+  .hero .inner .content .right .close-quote img {
+    margin-left: auto;
+    position: relative;
+    top: -30px;
+    left: -30px;
+  }
+}
+@media (max-width: 992px) {
+  .hero .inner .content {
+    padding: 0 20px;
+    grid-template-columns: 2fr;
+    gap: 2rem;
+  }
+  .hero .inner .content .left,
+  .hero .inner .content .center,
+  .hero .inner .content .right {
+    grid-column: span 2;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .hero .inner .content .left {
+    text-align: center;
+  }
+  .hero .inner .content .left .text,
+  .hero .inner .content .left .text-bold {
+    text-align: center;
+  }
+  .hero .inner .content .right .quote-text {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .hero .inner .content .center {
+    margin-top: 20px;
+  }
+  .hero .inner .content .center .image-frame img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 576px) {
+  .hero {
+    padding: 24px 16px;
+  }
+  .hero .inner .main-heading h1 {
+    margin-bottom: 1.5rem;
+  }
+  .hero .inner .hero-image-button {
+    display: block;
+    width: 100%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f5e7ba;
+  color: #380c0d;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.text {
+  font-family: "Krub", sans-serif;
+  font-size: 20px;
+  color: #380c0d;
+  line-height: 110%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=custom-styles.css.map */

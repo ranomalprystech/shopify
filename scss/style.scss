@@ -1,278 +1,277 @@
 @use "./vars" as *;
-@use "./components/ways-to-work.scss";
-@use "./components/rachel.story.scss";
-@use "./components/as-featured-in.scss";
+// @use "./components/ways-to-work.scss";
+// @use "./components/rachel.story.scss";
+// @use "./components/as-featured-in.scss";
 @use "./components/hero_section.scss";
+@use "./global.scss";
 
+// .rachel-landing {
+//   background: $color-bg;
+//   color: $color-primary;
+// }
 
+// .rachel-hero {
+//   max-width: 1240px;
+//   margin: 0 auto;
+//   padding: 80px 40px;
 
-.rachel-landing {
-  background: $color-bg;
-  color: $color-primary;
-}
+//   .heading {
+//     max-width: 800px;
+//     text-align: center;
 
-.rachel-hero {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 80px 40px;
+//     h1 {
+//       color: $color-primary;
+//       font-family: "The Seasons";
+//       font-size: 72px;
+//       position: relative;
+//     }
+//   }
 
-  .heading {
-    max-width: 800px;
-    text-align: center;
+//   .content {
+//     display: flex;
+//   }
 
-    h1 {
-      color: $color-primary;
-      font-family: "The Seasons";
-      font-size: 72px;
-      position: relative;
-    }
-  }
+//   .left {
+//     max-width: 400px;
+//     justify-self: end;
+//     color: $color-secondary;
 
-  .content {
-    display: flex;
-  }
+//     p {
+//       font-size: 20px;
+//       line-height: 110%;
+//       font-family: $krub;
+//     }
 
-  .left {
-    max-width: 400px;
-    justify-self: end;
-    color: $color-secondary;
+//     p:last-child {
+//       margin-bottom: 0;
+//       font-weight: 700;
+//       color: $color-olive;
+//     }
+//   }
 
-    p {
-      font-size: 20px;
-      line-height: 110%;
-      font-family: $krub;
-    }
+//   .highlight {
+//     font-style: italic;
+//     font-weight: 700;
+//   }
 
-    p:last-child {
-      margin-bottom: 0;
-      font-weight: 700;
-      color: $color-olive;
-    }
-  }
+//   .center {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     width: 360px;
+//     margin-top: -120px;
+//   }
 
-  .highlight {
-    font-style: italic;
-    font-weight: 700;
-  }
+//   .rachel-image-frame {
+//     width: 100%;
+//     border: 1px solid $color-border;
+//     padding: 10px;
+//     border-radius: 200px 200px 0 0;
+//   }
 
-  .center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 360px;
-    margin-top: -120px;
-  }
+//   .rachel-image-frame img {
+//     display: block;
+//     max-width: 400px;
+//     height: 450px;
 
-  .rachel-image-frame {
-    width: 100%;
-    border: 1px solid $color-border;
-    padding: 10px;
-    border-radius: 200px 200px 0 0;
-  }
+//     object-fit: cover;
+//     border-radius: 200px 200px 0 0;
+//   }
 
-  .rachel-image-frame img {
-    display: block;
-    max-width: 400px;
-    height: 450px;
+//   .rachel-image-caption {
+//     padding: 13px 4px 7px;
+//     color: $color-primary;
+//     text-align: center;
+//     font-family: Georgia, "Times New Roman", serif;
+//     font-size: 20px;
+//     line-height: 1.05;
+//     text-transform: uppercase;
+//   }
 
-    object-fit: cover;
-    border-radius: 200px 200px 0 0;
-  }
+//   .rachel-button {
+//     display: inline-block;
+//     margin-top: 22px;
+//     padding: 11px 22px;
+//     border: 1px solid $color-secondary;
+//     border-radius: 30px;
+//     color: $color-secondary;
+//     background: transparent;
+//     font-size: 14px;
+//     text-decoration: none;
+//     transition: all 0.25s ease;
 
-  .rachel-image-caption {
-    padding: 13px 4px 7px;
-    color: $color-primary;
-    text-align: center;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 20px;
-    line-height: 1.05;
-    text-transform: uppercase;
-  }
+//     &:hover {
+//       color: $color-bg;
+//       background: $color-secondary;
+//     }
+//   }
 
-  .rachel-button {
-    display: inline-block;
-    margin-top: 22px;
-    padding: 11px 22px;
-    border: 1px solid $color-secondary;
-    border-radius: 30px;
-    color: $color-secondary;
-    background: transparent;
-    font-size: 14px;
-    text-decoration: none;
-    transition: all 0.25s ease;
+//   .right {
+//     position: relative;
+//     display: flex;
+//     align-items: start;
+//     justify-self: center;
 
-    &:hover {
-      color: $color-bg;
-      background: $color-secondary;
-    }
-  }
+//     p {
+//       margin: 50px;
+//       color: $color-olive;
+//       font-size: 32px;
+//       font-family: $Handlee;
+//       line-height: 100%;
+//       max-width: 312px;
+//     }
+//   }
 
-  .right {
-    position: relative;
-    display: flex;
-    align-items: start;
-    justify-self: center;
+//   .rachel-quote-mark {
+//     position: absolute;
+//     color: $color-olive;
+//     font-family: Georgia, "Times New Roman", serif;
+//     font-size: 65px;
+//     font-weight: 700;
+//     line-height: 0.5;
 
-    p {
-      margin: 50px;
-      color: $color-olive;
-      font-size: 32px;
-      font-family: $Handlee;
-      line-height: 100%;
-      max-width: 312px;
-    }
-  }
+//     &--open {
+//       top: 52px;
+//       left: 10px;
+//     }
 
-  .rachel-quote-mark {
-    position: absolute;
-    color: $color-olive;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 65px;
-    font-weight: 700;
-    line-height: 0.5;
+//     &--close {
+//       right: 28px;
+//       bottom: 280px;
+//     }
+//   }
+// }
 
-    &--open {
-      top: 52px;
-      left: 10px;
-    }
+// .product-card__content {
+//   border: 1px solid #380c0d !important;
+//   border-radius: 0;
+//   color: #380c0d !important;
+//   overflow: hidden;
+// }
 
-    &--close {
-      right: 28px;
-      bottom: 280px;
-    }
-  }
-}
+// .product-card__content img {
+//   aspect-ratio: 4 / 5;
+//   object-fit: cover;
+//   width: 100%;
+//   height: auto;
+// }
 
-.product-card__content {
-  border: 1px solid #380c0d !important;
-  border-radius: 0;
-  color: #380c0d !important;
-  overflow: hidden;
-}
+// .card-gallery {
+//   border-radius: 0;
+// }
 
-.product-card__content img {
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-}
+// .product-grid,
+// [class*="grid"] {
+//   gap: 35px;
+// }
 
-.card-gallery {
-  border-radius: 0;
-}
+// .text-block--ASWF0ZDRTdlpjVHphQ__product_list_text_YFtzcL {
+//   --font-family: "Fontspring Demo", serif !important;
+// }
 
-.product-grid,
-[class*="grid"] {
-  gap: 35px;
-}
+// .text-block--ASWF0ZDRTdlpjVHphQ__product_list_text_YFtzcL {
+//   h3 {
+//     font-family: "The Seasons";
+//     font-size: 64px;
+//   }
+// }
 
-.text-block--ASWF0ZDRTdlpjVHphQ__product_list_text_YFtzcL {
-  --font-family: "Fontspring Demo", serif !important;
-}
+// @media (max-width: 768px) {
+//   .rachel-hero {
+//     padding: 40px 16px;
+//     max-width: 100%;
+//     overflow: hidden;
 
-.text-block--ASWF0ZDRTdlpjVHphQ__product_list_text_YFtzcL {
-  h3 {
-    font-family: "The Seasons";
-    font-size: 64px;
-  }
-}
+//     .heading {
+//       max-width: 100%;
+//       margin: 0 auto;
 
-@media (max-width: 768px) {
-  .rachel-hero {
-    padding: 40px 16px;
-    max-width: 100%;
-    overflow: hidden;
+//       h1 {
+//         font-size: 24px;
+//         // letter-spacing: 2px;
+//         // line-height: 0.95;
+//         margin: 0;
+//       }
+//     }
 
-    .heading {
-      max-width: 100%;
-      margin: 0 auto;
+//     .content {
+//       display: grid;
+//       align-items: start;
+//       gap: 12px;
+//     }
 
-      h1 {
-        font-size: 24px;
-        // letter-spacing: 2px;
-        // line-height: 0.95;
-        margin: 0;
-      }
-    }
+//     .left {
+//       max-width: 100%;
 
-    .content {
-      display: grid;
-      align-items: start;
-      gap: 12px;
-    }
+//       p {
+//         font-size: 16px;
+//         line-height: 110%;
+//         margin-top: 0;
+//       }
+//     }
 
-    .left {
-      max-width: 100%;
+//     // Center the image column itself
+//     .center {
+//       width: 100%;
+//       max-width: 280px;
+//       margin: 0 auto;
+//     }
 
-      p {
-        font-size: 16px;
-        line-height: 110%;
-        margin-top: 0;
-      }
-    }
+//     .rachel-image-frame {
+//       width: 100%;
+//       padding: 7px;
+//     }
 
-    // Center the image column itself
-    .center {
-      width: 100%;
-      max-width: 280px;
-      margin: 0 auto;
-    }
+//     .rachel-image-frame img {
+//       display: block;
+//       width: 100%;
+//       height: auto;
+//       aspect-ratio: 3 / 4;
+//       max-width: none;
+//       object-fit: cover;
+//     }
 
-    .rachel-image-frame {
-      width: 100%;
-      padding: 7px;
-    }
+//     .rachel-image-caption {
+//       font-size: 16px;
+//       padding: 10px 2px 5px;
+//     }
 
-    .rachel-image-frame img {
-      display: block;
-      width: 100%;
-      height: auto;
-      aspect-ratio: 3 / 4;
-      max-width: none;
-      object-fit: cover;
-    }
+//     .right {
+//       grid-column: 1 / -1;
+//       width: 100%;
+//       max-width: 320px;
+//       margin: 24px auto 0;
+//       display: flex;
+//       align-items: center;
+//       text-align: center;
 
-    .rachel-image-caption {
-      font-size: 16px;
-      padding: 10px 2px 5px;
-    }
+//       p {
+//         margin: 0px;
+//         font-size: 24px;
+//         max-width: 100%;
+//       }
+//     }
 
-    .right {
-      grid-column: 1 / -1;
-      width: 100%;
-      max-width: 320px;
-      margin: 24px auto 0;
-      display: flex;
-      align-items: center;
-      text-align: center;
+//     .rachel-quote-mark {
+//       font-size: 44px;
+//       line-height: 1;
+//       color: $color-olive;
 
-      p {
-        margin: 0px;
-        font-size: 24px;
-        max-width: 100%;
-      }
-    }
+//       &--open {
+//         top: -8px;
+//         left: 14px;
+//       }
 
-    .rachel-quote-mark {
-      font-size: 44px;
-      line-height: 1;
-      color: $color-olive;
-
-      &--open {
-        top: -8px;
-        left: 14px;
-      }
-
-      &--close {
-        top: 56px;
-        right: 6px;
-      }
-    }
-  }
-  .text-block--ASWF0ZDRTdlpjVHphQ__product_list_text_YFtzcL {
-    h3 {
-      font-family: "The Seasons";
-      font-size: 40px;
-    }
-  }
-}
+//       &--close {
+//         top: 56px;
+//         right: 6px;
+//       }
+//     }
+//   }
+//   .text-block--ASWF0ZDRTdlpjVHphQ__product_list_text_YFtzcL {
+//     h3 {
+//       font-family: "The Seasons";
+//       font-size: 40px;
+//     }
+//   }
+// }

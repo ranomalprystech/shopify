@@ -9,8 +9,24 @@
  */
 {
   "sections": {
+    "hero_section_d6qxRb": {
+      "type": "hero_section",
+      "name": "Hero Section",
+      "settings": {
+        "heading": "WORDS FOR THE HEALING JOURNEY.",
+        "left_paragraph_1": "Taking wisdom and lessons from 18 years of therapy and paying it forward with radical transparency, vulnerability, and education.",
+        "left_paragraph_2": "It is my hope that you finally feel safe to show up as the fullest you, and that in doing so you learn to radically love and accept others in their full self-states, too.",
+        "left_paragraph_bold": "Whatever you do, I hope you live with purpose, lead with love, & connect with courage.",
+        "image": "shopify://shop_images/Rectangle_1_66f63b6d-4663-4048-9817-7de5fffc8e2a.png",
+        "image_caption": "Author. Storyteller. Teacher.",
+        "open_quote": "shopify://shop_images/quote_open.svg",
+        "quote_text": "I’m not interested in befores and afters. Show me the messy middle.",
+        "close_quote": "shopify://shop_images/quote_close.svg"
+      }
+    },
     "custom_hero_LVRDL4": {
       "type": "custom-hero",
+      "disabled": true,
       "name": "Rachel Landing",
       "settings": {
         "heading": "WORDS FOR THE HEALING JOURNEY.",
@@ -202,6 +218,7 @@
           ]
         }
       },
+      "disabled": true,
       "name": "t:names.product_list",
       "settings": {
         "collection": "all",
@@ -225,6 +242,7 @@
     },
     "ways_to_work_nQ9DYW": {
       "type": "ways-to-work",
+      "disabled": true,
       "name": "Ways to Work With Rachel",
       "settings": {
         "heading": "WAYS TO WORK WITH RACHEL",
@@ -283,6 +301,7 @@
         "logo_4Nn9Qj",
         "logo_C8remD"
       ],
+      "disabled": true,
       "name": "As Featured In",
       "settings": {
         "heading": "As Featured In:",
@@ -292,6 +311,7 @@
     }
   },
   "order": [
+    "hero_section_d6qxRb",
     "custom_hero_LVRDL4",
     "product_list_fa6P9H",
     "ways_to_work_nQ9DYW",

@@ -1,43 +1,251 @@
 @use "../vars" as *;
 
 .hero {
-  height: 100vh;
   background-color: $color-bg;
+  padding: 0px 40px;
 
   .inner {
-    max-width: 800px;
-    padding: '60px 40px';
-    margin: 20px auto;
+    max-width: 1240px;
+    margin: 0px auto;
+
+    .main-heading h1 {
+      font-size: 72px;
+      text-align: center;
+      color: $color-primary;
+      font-family: "The Seasons";
+      margin: auto;
+      position: relative;
+      max-width: 672px;
+      top: 48px;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      .left {
+        text-align: left;
+        max-width: 32%;
+        font-family: $krub;
+        font-size: 20px;
+
+        .text {
+          line-height: 110%;
+          padding: 20px 0px;
+        }
+
+        .text-bold {
+          font-weight: bold;
+          color: #4e4d2e;
+          font-style: italic;
+          line-height: 110%;
+        }
+      }
+
+      .center {
+        max-width: 35%;
+
+        .image-frame {
+          border: 1px solid $color-border;
+          padding: 10px;
+          max-width: 100%;
+          border-radius: 200px 200px 0px 0px;
+
+          img {
+            aspect-ratio: 0.88;
+            object-fit: cover;
+            display: block;
+            border-radius: 200px 200px 0px 0px;
+          }
+        }
+
+        .image-caption {
+          font-size: 36px;
+          font-family: "The Seasons";
+          text-align: center;
+          line-height: 100%;
+          margin: 20px 9px;
+          color: $color-primary;
+        }
+      }
+
+      .right {
+        max-width: 32%;
+
+        img {
+          width: 60px;
+          height: 60px;
+          position: relative;
+          top: 40px;
+        }
+
+        .close-quote img {
+          margin-left: auto;
+          position: relative;
+          top: -26px;
+          left: 10px;
+        }
+
+        .quote-text {
+          font-family: $Handlee;
+          font-size: 32px;
+          line-height: 100%;
+          font-weight: 200;
+          margin-left: 68px;
+          margin-top: 23px;
+        }
+      }
+    }
+
+    .hero-image-button {
+      width: fit-content;
+      margin: 25px auto;
+      padding: 16px 20px;
+      border: 1px solid $color-secondary;
+      border-radius: 32px;
+      color: $color-secondary;
+      font-size: 20px;
+
+      &:hover {
+        color: $color-bg;
+        background: $color-secondary;
+      }
+    }
+  }
+}
+
+.hero {
+  @media (max-width: 1024px) {
+    height: auto;
+    padding: 20px;
+
+    .inner {
+      .main-heading h1 {
+        font-size: 36px;
+        top: 0;
+      }
+
+      .content {
+        flex-direction: column;
+        align-items: center;
+
+        .left,
+        .center,
+        .right {
+          max-width: 100%;
+          width: 100%;
+        }
+
+        .left {
+          margin: 0;
+          text-align: center;
+
+          .text,
+          .text-bold {
+            text-align: left;
+          }
+
+          .text {
+            padding: 10px 0;
+          }
+        }
+
+        .center {
+          .image-frame,
+          .image-frame img {
+            width: 500px;
+            height: 600px; 
+            border-radius: 200px 200px 0 0;
+          }
+        }
+
+        .right {
+          top: 0;
+          margin: 20px 0;
+          text-align: center;
+
+          img {
+            max-width: 36px;
+            max-height: 36px;
+          }
+
+          .open-quote img {
+            top: 23px;
+          }
+
+          .quote-text {
+            margin-left: 40px;
+            text-align: left;
+            width: 274px;
+          }
+
+          .close-quote img {
+            margin-left: auto;
+            position: relative;
+            top: -30px;
+            left: -30px;
+          }
+        }
+      }
+    }
   }
 
-  .main-heading h1 {
-    font-size: 72px;
-    text-align: center;
-    padding-top: 60px 0px; 
-    color: $color-primary;
-    font-family: "The Seasons";
+  @media (max-width: 992px) {
+    .inner .content {
+      padding: 0 20px;
+      grid-template-columns: 2fr;
+      gap: 2rem;
+
+      .left,
+      .center,
+      .right {
+        grid-column: span 2;
+        max-width: 600px;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .left {
+        text-align: center;
+
+        .text,
+        .text-bold {
+          text-align: center;
+        }
+      }
+
+      .right .quote-text {
+        text-align: center;
+        padding-left: 0;
+      }
+    }
   }
 
-  .content {
-    display: flex;
-    gap: 20px;
-    top: 40px;
+  @media (max-width: 768px) {
+    .inner .content .center {
+      margin-top: 20px;
+
+      .image-frame img {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 
-  .left {
-    text-align: left;
-    width: 400px;
-  }
+  @media (max-width: 576px) {
+    padding: 24px 16px;
 
-  .center img {
-    width: 500px;
-    height: 500px;
-  }
+    .inner {
+      .main-heading h1 {
+        margin-bottom: 1.5rem;
+      }
 
-  .right img {
-    width: 60px;
-    height: 58px
+      .hero-image-button {
+        display: block;
+        width: 100%;
+      }
+    }
   }
-
-  
 }
