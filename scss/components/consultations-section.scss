@@ -1,0 +1,15 @@
+@use "../vars" as *;
+
+.consultation {
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+
+    img {
+      width: 450px;
+      height: auto;
+    }
+  }
+}

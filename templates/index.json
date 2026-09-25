@@ -21,24 +21,16 @@
         "image_caption": "Author. Storyteller. Teacher.",
         "open_quote": "shopify://shop_images/quote_open.svg",
         "quote_text": "I’m not interested in befores and afters. Show me the messy middle.",
-        "close_quote": "shopify://shop_images/quote_close.svg"
+        "close_quote": "shopify://shop_images/quote_close.svg",
+        "button_text": "More About Rachel",
+        "button_link": ""
       }
     },
     "custom_hero_LVRDL4": {
       "type": "custom-hero",
       "disabled": true,
       "name": "Rachel Landing",
-      "settings": {
-        "heading": "WORDS FOR THE HEALING JOURNEY.",
-        "main_image": "shopify://shop_images/Rectangle_1_66f63b6d-4663-4048-9817-7de5fffc8e2a.png",
-        "left_text_1": "Taking wisdom and lessons from 18 years of therapy and paying it forward with radical transparency, vulnerability, and education.",
-        "left_text_2": "It is my hope that you finally feel safe to show up as the fullest you, and that in doing so you learn to radically love and accept others in their full self-states, too.",
-        "highlight_text": "Whatever you do, I hope you live with purpose, lead with love, & connect with courage.",
-        "quote": "I’m not interested in befores and afters. Show me the messy middle.",
-        "image_caption": "AUTHOR. STORYTELLER. TEACHER.",
-        "button_text": "More About Rachel",
-        "button_link": ""
-      }
+      "settings": {}
     },
     "product_list_fa6P9H": {
       "type": "product-list",

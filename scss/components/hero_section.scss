@@ -2,7 +2,7 @@
 
 .hero {
   background-color: $color-bg;
-  padding: 0px 40px;
+  padding: 12px 20px 12px 20px;
 
   .inner {
     max-width: 1240px;
@@ -33,7 +33,7 @@
 
         .text {
           line-height: 110%;
-          padding: 20px 0px;
+          padding: 0px 0px 20px 0px;
         }
 
         .text-bold {
@@ -66,42 +66,46 @@
           font-family: "The Seasons";
           text-align: center;
           line-height: 100%;
-          margin: 20px 9px;
+          margin: 10px 0px;
           color: $color-primary;
         }
       }
 
       .right {
         max-width: 32%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
 
-        img {
+        .open-quote {
           width: 60px;
           height: 60px;
-          position: relative;
-          top: 40px;
+          position: relative !important;
+          object-fit: contain !important;
+          bottom: 65px !important;
         }
 
-        .close-quote img {
-          margin-left: auto;
+        .close-quote {
+          width: 60px;
+          height: 60px;
+          object-fit: contain;
           position: relative;
-          top: -26px;
-          left: 10px;
+          top: 60px;
+          right: 10px;
         }
 
         .quote-text {
           font-family: $Handlee;
           font-size: 32px;
           line-height: 100%;
-          font-weight: 200;
-          margin-left: 68px;
-          margin-top: 23px;
         }
       }
     }
 
     .hero-image-button {
       width: fit-content;
-      margin: 25px auto;
+      margin: 25px auto 0px auto;
       padding: 16px 20px;
       border: 1px solid $color-secondary;
       border-radius: 32px;
@@ -114,11 +118,8 @@
       }
     }
   }
-}
 
-.hero {
   @media (max-width: 1024px) {
-    height: auto;
     padding: 20px;
 
     .inner {
@@ -142,28 +143,30 @@
           margin: 0;
           text-align: center;
 
-          .text,
-          .text-bold {
-            text-align: left;
-          }
+          // .text,
+          // .text-bold {
+          //   text-align: left;
+          // }
 
-          .text {
-            padding: 10px 0;
-          }
+          // .text {
+          //   padding: 10px 0;
+          // }
         }
 
         .center {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+
           .image-frame,
           .image-frame img {
-            width: 500px;
-            height: 600px; 
-            border-radius: 200px 200px 0 0;
+            max-width: 500px;
+            border-radius: 250px 250px 0 0;
           }
         }
 
         .right {
-          top: 0;
-          margin: 20px 0;
           text-align: center;
 
           img {
@@ -171,80 +174,85 @@
             max-height: 36px;
           }
 
-          .open-quote img {
-            top: 23px;
+          .quote {
+            width: 80%;
+          }
+
+          .open-quote {
+            top: -16px;
+          }
+
+          .close-quote {
+            position: relative;
+            top: 0px;
+            right: 0px;
           }
 
           .quote-text {
-            margin-left: 40px;
             text-align: left;
-            width: 274px;
-          }
-
-          .close-quote img {
-            margin-left: auto;
-            position: relative;
-            top: -30px;
-            left: -30px;
           }
         }
-      }
-    }
-  }
-
-  @media (max-width: 992px) {
-    .inner .content {
-      padding: 0 20px;
-      grid-template-columns: 2fr;
-      gap: 2rem;
-
-      .left,
-      .center,
-      .right {
-        grid-column: span 2;
-        max-width: 600px;
-        margin: 0 auto;
-        width: 100%;
-      }
-
-      .left {
-        text-align: center;
-
-        .text,
-        .text-bold {
-          text-align: center;
-        }
-      }
-
-      .right .quote-text {
-        text-align: center;
-        padding-left: 0;
       }
     }
   }
 
   @media (max-width: 768px) {
     .inner .content .center {
-      margin-top: 20px;
-
       .image-frame img {
         width: 100%;
-        height: auto;
+      }
+    }
+    .right {
+      .open-quote {
+        position: relative !important;
+        top: -24px !important;
+      }
+
+      .close-quote {
+        position: relative !important;
+        top: 28px !important;
+        right: 22px !important;
       }
     }
   }
 
   @media (max-width: 576px) {
-    padding: 24px 16px;
-
     .inner {
-      .main-heading h1 {
-        margin-bottom: 1.5rem;
+      .hero-image-button {
+        text-align: center;
       }
 
+      .right {
+        .open-quote {
+          position: relative;
+          top: -40px;
+        }
+
+        .close-quote {
+          position: relative;
+          top: 28px;
+          right: 0px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 320px) {
+    .inner {
       .hero-image-button {
-        display: block;
-        width: 100%;
+        text-align: center;
+      }
+
+      .right {
+        .open-quote {
+          position: relative !important;
+          top: -89px !important;
+        }
+
+        .close-quote {
+          position: relative !important;
+          top: 84px !important;
+        }
       }
     }
   }

@@ -1,0 +1,72 @@
+<section class="consultation">
+  <div class="content">
+
+    {% if section.settings.left_img != blank %}
+      {{ section.settings.left_img | image_url: width: 1000 | image_tag: loading: 'lazy', widths: '400, 600, 800, 1000', class: 'left-img' }}
+    {% endif %}
+
+    <div class="right">
+      {% if section.settings.consultation_heading != blank %}
+        <div class="main-heading">
+          <h1>{{ section.settings.consultation_heading }}</h1>
+        </div>
+      {% endif %}
+
+      {% if section.settings.paragraph_1 != blank %}
+        <p class="text">{{ section.settings.paragraph_1 }}</p>
+      {% endif %}
+
+      {% if section.settings.button_text != blank %}
+        <a href="{{ section.settings.button_link | default: '#' }}" class="button">
+          {{ section.settings.button_text }}
+        </a>
+      {% endif %}
+
+      {% if section.settings.paragraph_2 != blank %}
+        <p class="text">{{ section.settings.paragraph_2 }}</p>
+      {% endif %}
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Consultation Section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "left_img",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "consultation_heading",
+        "label": "Heading"
+      },
+      {
+        "type": "textarea",
+        "id": "paragraph_1",
+        "label": "First Paragraph"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Label"
+      }, {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button Link"
+      }, {
+        "type": "textarea",
+        "id": "paragraph_2",
+        "label": "Second Paragraph"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Consultation Section"
+      }
+    ]
+  }
+{% endschema %}
