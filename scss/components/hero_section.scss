@@ -142,15 +142,6 @@
         .left {
           margin: 0;
           text-align: center;
-
-          // .text,
-          // .text-bold {
-          //   text-align: left;
-          // }
-
-          // .text {
-          //   padding: 10px 0;
-          // }
         }
 
         .center {
@@ -213,6 +204,17 @@
         top: 28px !important;
         right: 22px !important;
       }
+    }
+
+    .center {
+      .hero-image-button {
+      width: fit-content;
+      margin: 25px auto 0;
+      padding: 8px 20px;
+      border: 1px solid #48191b;
+      border-radius: 32px;
+      color: #48191b;
+    }
     }
   }
 

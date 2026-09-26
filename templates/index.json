@@ -300,6 +300,18 @@
         "subheading": "Find all of my podcast interviews compiled in the playlist below:",
         "spotify_embed_url": ""
       }
+    },
+    "consultations_section_m7i6Wi": {
+      "type": "consultations-section",
+      "name": "Consultation Section",
+      "settings": {
+        "left_img": "shopify://shop_images/6-Photoroom_2.png",
+        "consultation_heading": "1:1 Consultations (60 minutes)",
+        "paragraph_1": "Whether you want to pick my brain about writing a book, starting a social media platform that is safe and inclusive, or coping with your mental health, this consultation will give you space to ask anything and everything.",
+        "button_text": "I want to pick rachie's brain!",
+        "button_link": "",
+        "paragraph_2": "*If you are looking for writing mentorship, send me an e-mail and tell me what you’re working on! I offer limited writing coaching (specifically memoir writing) and would love to talk to you."
+      }
     }
   },
   "order": [
@@ -307,6 +319,7 @@
     "custom_hero_LVRDL4",
     "product_list_fa6P9H",
     "ways_to_work_nQ9DYW",
-    "as_featured_in_8jjTPR"
+    "as_featured_in_8jjTPR",
+    "consultations_section_m7i6Wi"
   ]
 }

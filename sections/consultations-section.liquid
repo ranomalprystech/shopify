@@ -1,34 +1,51 @@
 <section class="consultation">
-  <div class="content">
-
-    {% if section.settings.left_img != blank %}
-      {{ section.settings.left_img | image_url: width: 1000 | image_tag: loading: 'lazy', widths: '400, 600, 800, 1000', class: 'left-img' }}
-    {% endif %}
-
-    <div class="right">
-      {% if section.settings.consultation_heading != blank %}
-        <div class="main-heading">
-          <h1>{{ section.settings.consultation_heading }}</h1>
-        </div>
-      {% endif %}
-
-      {% if section.settings.paragraph_1 != blank %}
-        <p class="text">{{ section.settings.paragraph_1 }}</p>
-      {% endif %}
-
-      {% if section.settings.button_text != blank %}
-        <a href="{{ section.settings.button_link | default: '#' }}" class="button">
-          {{ section.settings.button_text }}
-        </a>
-      {% endif %}
-
-      {% if section.settings.paragraph_2 != blank %}
-        <p class="text">{{ section.settings.paragraph_2 }}</p>
+  <div class="inner inner--{{ section.settings.image_alignment }}{% if section.settings.hide_border %} inner--no-border{% endif %}">
+    <div class="side-image">
+      {% if section.settings.image != blank %}
+        {{ section.settings.image | image_url: width: 1000 | image_tag: loading: 'lazy', widths: '400, 600, 800,1000'
+        }}
       {% endif %}
     </div>
 
+    <div class="right">
+      {% if section.settings.consultation_heading != blank %}
+        <h1 class="main-heading">
+          {{ section.settings.consultation_heading }}
+        </h1>
+      {% endif %}
+
+      {% if section.settings.paragraph_1 != blank %}
+        <p class="text">
+          {{ section.settings.paragraph_1 }}
+        </p>
+      {% endif %}
+
+      {% if section.settings.button_text != blank %}
+        <div class="consultation_primary_btn">
+          <a href="{{ section.settings.button_link | default: '#' }}">
+            {{ section.settings.button_text }}
+          </a>
+        </div>
+      {% endif %}
+
+      {% if section.settings.secondary_button != blank %}
+        <div class="consultation_primary_btn">
+          <a href="{{ section.settings.secondary_button_link | default: '#' }}">
+            {{ section.settings.secondary_button }}
+          </a>
+        </div>
+      {% endif %}
+
+      {% if section.settings.paragraph_2 != blank %}
+        <p class="text">
+          {{ section.settings.paragraph_2 }}
+        </p>
+      {% endif %}
+    </div>
   </div>
+
 </section>
+
 
 {% schema %}
   {
@@ -36,8 +53,23 @@
     "settings": [
       {
         "type": "image_picker",
-        "id": "left_img",
+        "id": "image",
         "label": "Image"
+      },
+      {
+        "type": "select",
+        "id": "image_alignment",
+        "label": "Image Alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          }, {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "left"
       },
       {
         "type": "text",
@@ -48,20 +80,32 @@
         "type": "textarea",
         "id": "paragraph_1",
         "label": "First Paragraph"
-      },
-      {
+      }, {
         "type": "text",
         "id": "button_text",
-        "label": "Button Label"
+        "label": "Primary Button"
       }, {
         "type": "url",
         "id": "button_link",
-        "label": "Button Link"
+        "label": "Primary Button Link"
+      }, {
+        "type": "text",
+        "id": "secondary_button",
+        "label": "Secondary Label"
+      }, {
+        "type": "url",
+        "id": "secondary_button_link",
+        "label": "Secondary Button Link"
       }, {
         "type": "textarea",
         "id": "paragraph_2",
         "label": "Second Paragraph"
-      }
+      }, {
+  "type": "checkbox",
+  "id": "hide_border",
+  "label": "Hide bottom border (use on last section)",
+  "default": false
+}
     ],
     "presets": [
       {
