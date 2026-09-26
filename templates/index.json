@@ -301,16 +301,84 @@
         "spotify_embed_url": ""
       }
     },
-    "consultations_section_m7i6Wi": {
+    "consultations_section_YTWpkP": {
       "type": "consultations-section",
       "name": "Consultation Section",
       "settings": {
-        "left_img": "shopify://shop_images/6-Photoroom_2.png",
+        "image": "shopify://shop_images/6-Photoroom_2.png",
+        "image_alignment": "left",
         "consultation_heading": "1:1 Consultations (60 minutes)",
-        "paragraph_1": "Whether you want to pick my brain about writing a book, starting a social media platform that is safe and inclusive, or coping with your mental health, this consultation will give you space to ask anything and everything.",
+        "paragraph_1": "Whether you want to pick my brain about writing a book, starting a social media platform that is safve and inclusive, or coping with your mental health, this consultation will give you space to ask anything and everything.",
         "button_text": "I want to pick rachie's brain!",
-        "button_link": "",
-        "paragraph_2": "*If you are looking for writing mentorship, send me an e-mail and tell me what you’re working on! I offer limited writing coaching (specifically memoir writing) and would love to talk to you."
+        "button_link": "shopify://products/spiral-up-1-1-consultation",
+        "secondary_button": "",
+        "secondary_button_link": "",
+        "paragraph_2": "*If you are looking for writing mentorship, send me an e-mail and tell me what you’re working on! I offer limited writing coaching (specifically memoir writing) and would love to talk to you.",
+        "hide_border": false
+      }
+    },
+    "consultations_section_XJxh9Y": {
+      "type": "consultations-section",
+      "name": "Consultation Section",
+      "settings": {
+        "image": "shopify://shop_images/Screen_Shot_2022-07-24_at_12.18.46_PM_1.png",
+        "image_alignment": "right",
+        "consultation_heading": "Where the River Flows: My Memoir",
+        "paragraph_1": "For anyone who has struggled with depression, anxiety, trauma, an eating disorder, sexuality and sex, grief, loss, or divorce, my memoir “Where the River Flows” is a deeply honest, raw, and insightful account of my experience with all of the above. In its pages you’ll find the lessons I’ve learned in therapy, wisdom born from the wreckage, and hope.",
+        "button_text": "Take me to the memoir",
+        "button_link": "shopify://products/where-the-river-flows-paperback",
+        "secondary_button": "",
+        "secondary_button_link": "",
+        "paragraph_2": "",
+        "hide_border": false
+      }
+    },
+    "consultations_section_rcQ7f4": {
+      "type": "consultations-section",
+      "name": "Consultation Section",
+      "settings": {
+        "image": "shopify://shop_images/6-Photoroom_2_597bddd5-58fb-4353-a1c0-5beaa631daed.png",
+        "image_alignment": "left",
+        "consultation_heading": "The Self-Healer’s Journal",
+        "paragraph_1": "The Self-Healer’s Journal is a 90-Day guided journal with over 50 unique prompts. This journal reflects the exact rubric that I follow daily, and is what I have used for over 2 years to keep my mood, thoughts, and sense of self balanced and well. I have created a print and e-version of this journal, so no matter your needs you can find support from this practice.",
+        "button_text": "Take me to the self-healer’s journal",
+        "button_link": "shopify://products/love-is-everywhere-print",
+        "secondary_button": "",
+        "secondary_button_link": "",
+        "paragraph_2": "*RECOMMENDED FOR NEW JOURNALERS!",
+        "hide_border": false
+      }
+    },
+    "consultations_section_HkwcAj": {
+      "type": "consultations-section",
+      "name": "Consultation Section",
+      "settings": {
+        "image": "shopify://shop_images/Screen_Shot_2022-07-24_at_12.18.46_PM_1_1.png",
+        "image_alignment": "right",
+        "consultation_heading": "The Inner Child Journal",
+        "paragraph_1": "The Inner Child Journal is a 90-day guided journal designed to heal and re-parent your Inner Child. The prompts in this journal will connect you to your Inner Child, facilitate meaningful healing, and teach you to cultivate your wise Inner Parent so that you can find peace and wholeness in your daily life. I have created a print and e-version of this journal, so no matter your needs you can find support in this practice.",
+        "button_text": "Take me to the inner child journal",
+        "button_link": "shopify://products/the-inner-child-journal-print-version",
+        "secondary_button": "",
+        "secondary_button_link": "",
+        "paragraph_2": "",
+        "hide_border": false
+      }
+    },
+    "consultations_section_7DiyCL": {
+      "type": "consultations-section",
+      "name": "Consultation Section",
+      "settings": {
+        "image": "shopify://shop_images/6-Photoroom_2_1.png",
+        "image_alignment": "left",
+        "consultation_heading": "Masterclass + Workshops",
+        "paragraph_1": "If you’re seeking more in depth support, education, and guidance, my Masterclasses and Workshops are a perfect option. These courses cover Writing and Creating Safe Spaces Online, Inner Child Healing, Emotion Regulation, Boundaries, and Re-Parenting in depth, and include video instruction from me, along with journals and exercises to assist you on your journey.",
+        "button_text": "Take me to the masterclasses",
+        "button_link": "shopify://products/the-grief-workbook-e-book-version",
+        "secondary_button": "",
+        "secondary_button_link": "",
+        "paragraph_2": "",
+        "hide_border": true
       }
     }
   },
@@ -320,6 +388,10 @@
     "product_list_fa6P9H",
     "ways_to_work_nQ9DYW",
     "as_featured_in_8jjTPR",
-    "consultations_section_m7i6Wi"
+    "consultations_section_YTWpkP",
+    "consultations_section_XJxh9Y",
+    "consultations_section_rcQ7f4",
+    "consultations_section_HkwcAj",
+    "consultations_section_7DiyCL"
   ]
 }
